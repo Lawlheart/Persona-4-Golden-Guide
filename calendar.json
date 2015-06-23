@@ -1,0 +1,23 @@
+{
+	"0521": {
+		"date": "May 21",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["magician", "chariot", "strength", "aeon", "temperance"]}, 
+	"0522": {
+		"date": "May 22",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["priestess", "aeon", "heirophant"]}, 
+	"0523": {
+		"date": "May 23",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["magician", "sun", "temperance", "justice"]}
+}

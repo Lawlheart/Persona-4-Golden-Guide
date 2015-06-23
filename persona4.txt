@@ -1,0 +1,13 @@
+persona themed calendar overlay that you click on and does a fade effect to all of the things you can do on that day
+
+//starts with a persona image that fades to a persona calendar. months are tiled with css, and when you click on a day of the year, it leads you to that day's page with all the social links you can do that day
+//each page has the social links available, bike rides, movie options, etc generated with node.js
+//each page has arrows to the adjacent days that fade left or right when clicked
+
+social link options
+////////////////////////////
+cards or portraits or icons showing which characters are available, potentially built using node.js and arrays for the different days of the week
+
+
+//loop to filter test/event days
+  //loop to filter different character availablity
