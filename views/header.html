@@ -2,66 +2,107 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel="stylesheet" src="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
-	<title>{{date}}</title>
+	<title>LawlietBlack | Persona 4 Golden</title>
 	<style>
-	body {
-		background-color: #202020;
-		font-family: 'Open Sans', sans-serif;
-		
-	}
-	.datecard {
-		border-top:10px solid red;
-		background-color: #ffd700;
-		width:80%;
-		margin:40px auto;
-		max-width: 800px;
-		min-height:400px;
-		box-shadow: 0 -5px 15px black;
-	}
-	.date {
-		border-top:10px solid #FF5300;
-		background-color: #070707;
-		border-bottom:10px solid green;
-		margin:0;
-		color:#cdcdcd;
-		height:60px;
-	}
-	.date img {
-		display:inline;
-		height:100px;
-		width:100px;
-		margin:-20px 0;
-	}
-	.date h1 {
-		display:inline-block;
-		vertical-align: text-bottom;
-		margin:0px 10px 10px;
-		font-size:34px;
-	}
-	.spacer{
-		margin:0;
-		height:10px;
-		background-color: teal;
-		border:none;
-	}
-	li {
-		list-style: none;
-		display: inline;
-	}
-	.slinks img {
-		background-color: #daa520;
-		border:5px solid #101010;
-		height:100px;
-		width: 100px;
-		border-radius: 15px;
-		margin:0 10px;
-	}
-	.slinks {
-		padding:0;
-		margin:10px 20px;
-	}
+		body {
+			background-color: #202020;
+			font-family: 'Open Sans', sans-serif;
+		}
+		.arrow {
+			width: 0; 
+			height: 0; 
+			border-top: 40px solid transparent;
+			border-bottom: 40px solid transparent;
+		}
+		.prev {
+			float:left;
+			border-right: 40px solid #0E2C85;
+			margin:10px 0 0 3%;
+		}
+		.next {
+			float:right;
+			margin:10px 3% 0 0;
+			border-left: 40px solid #0E2C85;
+		}
+		.datecard, .daycard, .nightcard  {
+			width:80%;
+			margin:10px auto;
+			max-width: 800px;
+			box-shadow: 0 -5px 15px black;
+		}
+		.datecard {
+			margin-top:40px;
+			border-top:10px solid red;
+			border-bottom:10px solid #0E2C85;
+		}
+		.daycard {
+			background-color: #FFBF00;
+			min-height: 400px;
+		}
+		.nightcard {
+			background-color: #0E2C85;
+			min-height: 400px;
+		}
+		.date {
+			border-top:10px solid #FF5300;
+			background-color: #FFBF00;
+			border-bottom:10px solid green;
+			margin:0;
+			color:#070707;
+			height:60px;
+			text-shadow:
+    		-1px -1px 0 #ccc,
+    		1px -1px 0 #ccc,
+    		-1px 1px 0 #ccc,
+    		1px 1px 0 #ccc;  
+		}
+		.date img {
+			display:inline;
+			height:100px;
+			width:100px;
+			margin:-20px 0;
+		}
+		.date h1 {
+			display:inline-block;
+			vertical-align: text-bottom;
+			margin:0px 10px 10px;
+			font-size:34px;
+		}
+		h1.title {
+			margin:0;
+			padding:10px 30px;
+    	text-shadow:
+    		-2px -2px 1px #ddd,
+    		2px -2px 1px #ddd,
+    		-2px 2px 1px #ddd,
+    		2px 2px 1px #ddd;  
+		}
+		li {
+			list-style: none;
+			display: inline;
+		}
+		.slinks img {
+			border:3px solid #101010;
+			height:100px;
+			width: 100px;
+			border-radius: 15px;
+			margin:0 10px;
+		}
+		.daycard .slinks img, .daycard .title {
+			background-color: #C06407;
+		}
+		.nightcard .slinks img, .nightcard .title {
+			background-color: #000850;
+		}
+		.notes {
+			margin:20px;
+		}
+		.slinks {
+			padding:0;
+			margin:10px 20px;
+		}
 	</style>
 </head>
 <body>

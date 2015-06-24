@@ -1,5 +1,6 @@
 var Events = require("./events.js");
 var renderer = require("./renderer.js");
+var express = require('express')
 var querystring = require("querystring");
 var commonHeaders = {'Content-Type': 'text/html'};
 var calendar = require('./calendar.json');
@@ -49,15 +50,7 @@ function date(request, response) {
 		response.writeHead(200, commonHeaders);
 		//get the current day from the calendar Object
 		var currentDay = calendar[searchDate];
-		renderer.view('header', currentDay, response);
-		renderer.view('datecard', currentDay, response);
-		//loop through available social links and add the icons to the page
-		for(var i=0;i<currentDay.socialLinks.length;i++) {
-			var link = {};
-			link.name = currentDay.socialLinks[i];
-			renderer.view('slink', link, response);
-		}
-		renderer.view('datecard-end', {}, response);
+		renderer.view('header', {}, response);
 		//create nagivation links
 		var currentIndex = datesArray.indexOf(searchDate)
 		var arrows = {
@@ -65,6 +58,20 @@ function date(request, response) {
 			"nextDay": datesArray[currentIndex+1]
 		}
 		renderer.view('arrows', arrows, response);
+		renderer.view('datecard', currentDay, response);
+		//loop through daytime social links and add the icons to the page
+		for(var i=0;i<currentDay.socialLinks.length;i++) {
+			var link = {};
+			link.name = currentDay.socialLinks[i];
+			renderer.view('slink', link, response);
+		}
+		//loop through nighttime social links and add the icons to the page
+		renderer.view('nightcard', currentDay, response);
+		for(var i=0;i<currentDay.nightLinks.length;i++) {
+			var link = {};
+			link.name = currentDay.nightLinks[i];
+			renderer.view('slink', link, response);
+		}
 		renderer.view('footer', {}, response);
 		response.end();
 	}
