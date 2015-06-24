@@ -1,9 +1,9 @@
 var dateObj = "["
-for(var i=1;i<261;i++) {
+for(var i=44;i<261;i++) {
 	var $row = $('tr').eq(i);
 	var $keys = $('tr').eq(0);
-	dateObj += '{'
-	for(var j=0;j<23;j++) {
+	dateObj += '"'+ $row.children().eq(0).text()+'": {'
+	for(var j=0;j<6;j++) {
 		dateObj +=  '"' + $keys.children().eq(j).text()+ '": "' + $row.children().eq(j).text() + '",' 
 	};	
 	dateObj += '},'

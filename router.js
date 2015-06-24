@@ -3,6 +3,11 @@ var renderer = require("./renderer.js");
 var querystring = require("querystring");
 var commonHeaders = {'Content-Type': 'text/html'};
 var calendar = require('./calendar.json');
+//create an array for dates
+var datesArray = []
+for(key in calendar) {
+	datesArray.push(key)
+}
 //Handle HTTP route GET / and POST / i.e. Home
 function home(request, response) {
 	//if url == "/" && GET
@@ -38,12 +43,13 @@ function date(request, response) {
 	//if url== "/...."
 	//get the date to display from the url
 	var searchDate = request.url.replace("/", "");
+
 	if(searchDate.length>0) {
 		//start writing html for page
 		response.writeHead(200, commonHeaders);
-		renderer.view('header', {}, response);
 		//get the current day from the calendar Object
 		var currentDay = calendar[searchDate];
+		renderer.view('header', currentDay, response);
 		renderer.view('datecard', currentDay, response);
 		//loop through available social links and add the icons to the page
 		for(var i=0;i<currentDay.socialLinks.length;i++) {
@@ -52,6 +58,13 @@ function date(request, response) {
 			renderer.view('slink', link, response);
 		}
 		renderer.view('datecard-end', {}, response);
+		//create nagivation links
+		var currentIndex = datesArray.indexOf(searchDate)
+		var arrows = {
+			"prevDay": datesArray[currentIndex-1],
+			"nextDay": datesArray[currentIndex+1]
+		}
+		renderer.view('arrows', arrows, response);
 		renderer.view('footer', {}, response);
 		response.end();
 	}

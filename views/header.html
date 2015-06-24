@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
-	<title>May 21st</title>
+	<title>{{date}}</title>
 	<style>
 	body {
 		background-color: #202020;
 		font-family: 'Open Sans', sans-serif;
+		
 	}
 	.datecard {
+		border-top:10px solid red;
 		background-color: #ffd700;
 		width:80%;
 		margin:40px auto;
@@ -18,25 +21,30 @@
 		box-shadow: 0 -5px 15px black;
 	}
 	.date {
-		border-top:10px solid red;
+		border-top:10px solid #FF5300;
 		background-color: #070707;
+		border-bottom:10px solid green;
 		margin:0;
-		color:#828282;
+		color:#cdcdcd;
+		height:60px;
 	}
 	.date img {
 		display:inline;
+		height:100px;
+		width:100px;
+		margin:-20px 0;
 	}
 	.date h1 {
 		display:inline-block;
 		vertical-align: text-bottom;
-		margin-left:20px;
+		margin:0px 10px 10px;
+		font-size:34px;
 	}
 	.spacer{
-		margin-top:0;
-		height:5px;
-		background-color: yellow;
-		border-top:16px solid green;
-		border-bottom: 10px solid teal;
+		margin:0;
+		height:10px;
+		background-color: teal;
+		border:none;
 	}
 	li {
 		list-style: none;
@@ -47,7 +55,8 @@
 		border:5px solid #101010;
 		height:100px;
 		width: 100px;
-		border-radius: 25px;
+		border-radius: 15px;
+		margin:0 10px;
 	}
 	.slinks {
 		padding:0;

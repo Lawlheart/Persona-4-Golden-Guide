@@ -1,23 +1,2082 @@
 {
-	"0521": {
-		"date": "May 21",
+	"0411": {
+		"date": "April 11th",
+		"weekDay": "Mon",
+		"weather": "cloud-rain",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0412": {
+		"date": "April 12th",
+		"weekDay": "Tue",
+		"weather": "rain-cloud",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0413": {
+		"date": "April 13th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0414": {
+		"date": "April 14th",
+		"weekDay": "Thu",
+		"weather": "rain",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0415": {
+		"date": "April 15th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0416": {
+		"date": "April 16th",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": ["magician"]
+	},
+	"0417": {
+		"date": "April 17th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0418": {
+		"date": "April 18th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["chariot", "aeon"]
+	},
+	"0419": {
+		"date": "April 19th",
+		"weekDay": "Tue",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["strength"]
+	},
+	"0420": {
+		"date": "April 20th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["magician"]
+	},
+	"0421": {
+		"date": "April 21st",
+		"weekDay": "Thu",
+		"weather": "rain-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["strength"]
+	},
+	"0422": {
+		"date": "April 22nd",
+		"weekDay": "Fri",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["magician", "aeon"]
+	},
+	"0423": {
+		"date": "April 23rd",
 		"weekDay": "Sat",
 		"weather": "cloudy",
 		"dayAvail": "Y",
 		"nightAvail": "Y",
-		"socialLinks": ["magician", "chariot", "strength", "aeon", "temperance"]}, 
-	"0522": {
-		"date": "May 22",
+		"socialLinks": ["magician", "aeon", "strength", "temperance"]
+	},
+	"0424": {
+		"date": "April 24th",
 		"weekDay": "Sun",
-		"weather": "cloudy",
+		"weather": "sunny",
 		"dayAvail": "Y",
 		"nightAvail": "Y",
-		"socialLinks": ["priestess", "aeon", "heirophant"]}, 
-	"0523": {
-		"date": "May 23",
+		"socialLinks": ["strength", "aeon", "magician"]
+	},
+	"0425": {
+		"date": "April 25th",
 		"weekDay": "Mon",
 		"weather": "cloudy",
 		"dayAvail": "Y",
 		"nightAvail": "Y",
-		"socialLinks": ["magician", "sun", "temperance", "justice"]}
+		"socialLinks": ["magician", "sun", "temperance"]
+	},
+	"0426": {
+		"date": "April 26th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["chariot", "strength", "sun", "aeon"]
+	},
+	"0427": {
+		"date": "April 27th",
+		"weekDay": "Wed",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["moon"]
+	},
+	"0428": {
+		"date": "April 28th",
+		"weekDay": "Thu",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["sun"]
+	},
+	"0429": {
+		"date": "April 29th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Event",
+		"socialLinks": []
+	},
+	"0430": {
+		"date": "April 30th",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0501": {
+		"date": "May 1st",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["aeon"]
+	},
+	"0502": {
+		"date": "May 2nd",
+		"weekDay": "Mon",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0503": {
+		"date": "May 3rd",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": ["justice"]
+	},
+	"0504": {
+		"date": "May 4th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["aeon", "chariot"]
+	},
+	"0505": {
+		"date": "May 5th",
+		"weekDay": "Thu",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": ["hermit"]
+	},
+	"0506": {
+		"date": "May 6th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["chariot", "magician", "temperance", "hierophant"]
+	},
+	"0507": {
+		"date": "May 7th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0508": {
+		"date": "May 8th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["chariot", "magician", "aeon", "hierophant"]
+	},
+	"0509": {
+		"date": "May 9th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Event - Midterms",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0510": {
+		"date": "May 10th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Event - Midterms",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0511": {
+		"date": "May 11th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Event - Midterms",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0512": {
+		"date": "May 12th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["magician", "sun", "strength", "chariot", "hierophant"]
+	},
+	"0513": {
+		"date": "May 13th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": ["jester", "temperance"]
+	},
+	"0514": {
+		"date": "May 14th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0515": {
+		"date": "May 15th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0516": {
+		"date": "May 16th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": []
+	},
+	"0517": {
+		"date": "May 17th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Event",
+		"nightAvail": "Restricted",
+		"socialLinks": ["priestess"]
+	},
+	"0518": {
+		"date": "May 18th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["strength", "justice"]
+	},
+	"0519": {
+		"date": "May 19th",
+		"weekDay": "Thu",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["strength", "hierophant"]
+	},
+	"0520": {
+		"date": "May 20th",
+		"weekDay": "Fri",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["empress", "temperance"]
+	},
+	"0521": {
+		"date": "May 21st",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["chariot", "strength", "aeon", "temperance"]
+	},
+	"0522": {
+		"date": "May 22nd",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["priestess", "aeon", "hierophant"]
+	},
+	"0523": {
+		"date": "May 23rd",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["magician", "sun", "temperance", "justice"]
+	},
+	"0524": {
+		"date": "May 24th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["strength", "sun", "priestess"]
+	},
+	"0525": {
+		"date": "May 25th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": ["priestess"]
+	},
+	"0526": {
+		"date": "May 26th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["magician", "chariot", "priestess", "strength", "sun", "hierophant", "tower", "devil"]
+	},
+	"0527": {
+		"date": "May 27th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["jester", "temperance", "justice", "devil"]
+	},
+	"0528": {
+		"date": "May 28th",
+		"weekDay": "Sat",
+		"weather": "rain-sun",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["strength", "magician", "chariot", "temperance", "hierophant", "tower"]
+	},
+	"0529": {
+		"date": "May 29th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["strength", "hierophant"]
+	},
+	"0530": {
+		"date": "May 30th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["magician", "sun", "chariot", "priestess", "temperance", "justice"]
+	},
+	"0531": {
+		"date": "May 31th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": ["strength", "sun", "chariot", "priestess", "hierophant", "tower"]
+	},
+	"0601": {
+		"date": "June 1st",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0602": {
+		"date": "June 2nd",
+		"weekDay": "Thu",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0603": {
+		"date": "June 3rd",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0604": {
+		"date": "June 4th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0605": {
+		"date": "June 5th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0606": {
+		"date": "June 6th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0607": {
+		"date": "June 7th",
+		"weekDay": "Tue",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0608": {
+		"date": "June 8th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0609": {
+		"date": "June 9th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0610": {
+		"date": "June 10th",
+		"weekDay": "Fri",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0611": {
+		"date": "June 11th",
+		"weekDay": "Sat",
+		"weather": "rain-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0612": {
+		"date": "June 12th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0613": {
+		"date": "June 13th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0614": {
+		"date": "June 14th",
+		"weekDay": "Tue",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0615": {
+		"date": "June 15th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0616": {
+		"date": "June 16th",
+		"weekDay": "Thu",
+		"weather": "sun-cloud",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0617": {
+		"date": "June 17th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0618": {
+		"date": "June 18th",
+		"weekDay": "Sat",
+		"weather": "cloud-rain",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0619": {
+		"date": "June 19th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0620": {
+		"date": "June 20th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0621": {
+		"date": "June 21st",
+		"weekDay": "Tue",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0622": {
+		"date": "June 22nd",
+		"weekDay": "Wed",
+		"weather": "rain-cloud",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0623": {
+		"date": "June 23rd",
+		"weekDay": "Thu",
+		"weather": "rain-cloud",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0624": {
+		"date": "June 24th",
+		"weekDay": "Fri",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0625": {
+		"date": "June 25th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0626": {
+		"date": "June 26th",
+		"weekDay": "Sun",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0627": {
+		"date": "June 27th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0628": {
+		"date": "June 28th",
+		"weekDay": "Tue",
+		"weather": "rain-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0629": {
+		"date": "June 29th",
+		"weekDay": "Wed",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0630": {
+		"date": "June 30th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0701": {
+		"date": "July 1st",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0702": {
+		"date": "July 2nd",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0703": {
+		"date": "July 3rd",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0704": {
+		"date": "July 4th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0705": {
+		"date": "July 5th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0706": {
+		"date": "July 6th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0707": {
+		"date": "July 7th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0708": {
+		"date": "July 8th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0709": {
+		"date": "July 9th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0710": {
+		"date": "July 10th",
+		"weekDay": "Sun",
+		"weather": "cloud-rain",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0711": {
+		"date": "July 11th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0712": {
+		"date": "July 12th",
+		"weekDay": "Tue",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0713": {
+		"date": "July 13th",
+		"weekDay": "Wed",
+		"weather": "rain-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0714": {
+		"date": "July 14th",
+		"weekDay": "Thu",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0715": {
+		"date": "July 15th",
+		"weekDay": "Fri",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0716": {
+		"date": "July 16th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0717": {
+		"date": "July 17th",
+		"weekDay": "Sun",
+		"weather": "rain-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0718": {
+		"date": "July 18th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0719": {
+		"date": "July 19th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0720": {
+		"date": "July 20th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0721": {
+		"date": "July 21st",
+		"weekDay": "Thu",
+		"weather": "rain-cloud",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0722": {
+		"date": "July 22nd",
+		"weekDay": "Fri",
+		"weather": "cloud-rain",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0723": {
+		"date": "July 23rd",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0724": {
+		"date": "July 24th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0725": {
+		"date": "July 25th",
+		"weekDay": "Mon",
+		"weather": "rain-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0726": {
+		"date": "July 26th",
+		"weekDay": "Tue",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0727": {
+		"date": "July 27th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0728": {
+		"date": "July 28th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0729": {
+		"date": "July 29th",
+		"weekDay": "Fri",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0730": {
+		"date": "July 30th",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0731": {
+		"date": "July 31th",
+		"weekDay": "Sun",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0801": {
+		"date": "August 1st",
+		"weekDay": "Mon",
+		"weather": "rain-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0802": {
+		"date": "August 2nd",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0803": {
+		"date": "August 3rd",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0804": {
+		"date": "August 4th",
+		"weekDay": "Thu",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0805": {
+		"date": "August 5th",
+		"weekDay": "Fri",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0806": {
+		"date": "August 6th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0807": {
+		"date": "August 7th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0808": {
+		"date": "August 8th",
+		"weekDay": "Mon",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0809": {
+		"date": "August 9th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0810": {
+		"date": "August 10th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0811": {
+		"date": "August 11th",
+		"weekDay": "Thu",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0812": {
+		"date": "August 12th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0813": {
+		"date": "August 13th",
+		"weekDay": "Sat",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0814": {
+		"date": "August 14th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0815": {
+		"date": "August 15th",
+		"weekDay": "Mon",
+		"weather": "sun-cloud",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0816": {
+		"date": "August 16th",
+		"weekDay": "Tue",
+		"weather": "cloud-rain",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0817": {
+		"date": "August 17th",
+		"weekDay": "Wed",
+		"weather": "rain-cloud",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0818": {
+		"date": "August 18th",
+		"weekDay": "Thu",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0819": {
+		"date": "August 19th",
+		"weekDay": "Fri",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0820": {
+		"date": "August 20th",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0821": {
+		"date": "August 21st",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0822": {
+		"date": "August 22nd",
+		"weekDay": "Mon",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0823": {
+		"date": "August 23rd",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0824": {
+		"date": "August 24th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0825": {
+		"date": "August 25th",
+		"weekDay": "Thu",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0826": {
+		"date": "August 26th",
+		"weekDay": "Fri",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0827": {
+		"date": "August 27th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0828": {
+		"date": "August 28th",
+		"weekDay": "Sun",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0829": {
+		"date": "August 29th",
+		"weekDay": "Mon",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0830": {
+		"date": "August 30th",
+		"weekDay": "Tue",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0831": {
+		"date": "August 31th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0901": {
+		"date": "September 1st",
+		"weekDay": "Thu",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0902": {
+		"date": "September 2nd",
+		"weekDay": "Fri",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0903": {
+		"date": "September 3rd",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0904": {
+		"date": "September 4th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0905": {
+		"date": "September 5th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0906": {
+		"date": "September 6th",
+		"weekDay": "Tue",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0907": {
+		"date": "September 7th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0908": {
+		"date": "September 8th",
+		"weekDay": "Thu",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0909": {
+		"date": "September 9th",
+		"weekDay": "Fri",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0910": {
+		"date": "September 10th",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0911": {
+		"date": "September 11th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0912": {
+		"date": "September 12th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0913": {
+		"date": "September 13th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0914": {
+		"date": "September 14th",
+		"weekDay": "Wed",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0915": {
+		"date": "September 15th",
+		"weekDay": "Thu",
+		"weather": "rain",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"0916": {
+		"date": "September 16th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0917": {
+		"date": "September 17th",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0918": {
+		"date": "September 18th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0919": {
+		"date": "September 19th",
+		"weekDay": "Mon",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0920": {
+		"date": "September 20th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0921": {
+		"date": "September 21st",
+		"weekDay": "Wed",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0922": {
+		"date": "September 22nd",
+		"weekDay": "Thu",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0923": {
+		"date": "September 23rd",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0924": {
+		"date": "September 24th",
+		"weekDay": "Sat",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0925": {
+		"date": "September 25th",
+		"weekDay": "Sun",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0926": {
+		"date": "September 26th",
+		"weekDay": "Mon",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0927": {
+		"date": "September 27th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0928": {
+		"date": "September 28th",
+		"weekDay": "Wed",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0929": {
+		"date": "September 29th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"0930": {
+		"date": "September 30th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1001": {
+		"date": "October 1st",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1002": {
+		"date": "October 2nd",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1003": {
+		"date": "October 3rd",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1004": {
+		"date": "October 4th",
+		"weekDay": "Tue",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1005": {
+		"date": "October 5th",
+		"weekDay": "Wed",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1006": {
+		"date": "October 6th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1007": {
+		"date": "October 7th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1008": {
+		"date": "October 8th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1009": {
+		"date": "October 9th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1010": {
+		"date": "October 10th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1011": {
+		"date": "October 11th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1012": {
+		"date": "October 12th",
+		"weekDay": "Wed",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1013": {
+		"date": "October 13th",
+		"weekDay": "Thu",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1014": {
+		"date": "October 14th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1015": {
+		"date": "October 15th",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1016": {
+		"date": "October 16th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1017": {
+		"date": "October 17th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1018": {
+		"date": "October 18th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1019": {
+		"date": "October 19th",
+		"weekDay": "Wed",
+		"weather": "sun-cloud",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1020": {
+		"date": "October 20th",
+		"weekDay": "Thu",
+		"weather": "rain-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1021": {
+		"date": "October 21st",
+		"weekDay": "Fri",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1022": {
+		"date": "October 22nd",
+		"weekDay": "Sat",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1023": {
+		"date": "October 23rd",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1024": {
+		"date": "October 24th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1025": {
+		"date": "October 25th",
+		"weekDay": "Tue",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1026": {
+		"date": "October 26th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1027": {
+		"date": "October 27th",
+		"weekDay": "Thu",
+		"weather": "sun-cloud",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1028": {
+		"date": "October 28th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1029": {
+		"date": "October 29th",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1030": {
+		"date": "October 30th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1031": {
+		"date": "October 31th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1101": {
+		"date": "November 1st",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1102": {
+		"date": "November 2nd",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1103": {
+		"date": "November 3rd",
+		"weekDay": "Thu",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1104": {
+		"date": "November 4th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1105": {
+		"date": "November 5th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1106": {
+		"date": "November 6th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1107": {
+		"date": "November 7th",
+		"weekDay": "Mon",
+		"weather": "cloud-rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1108": {
+		"date": "November 8th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1109": {
+		"date": "November 9th",
+		"weekDay": "Wed",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1110": {
+		"date": "November 10th",
+		"weekDay": "Thu",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1111": {
+		"date": "November 11th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1112": {
+		"date": "November 12th",
+		"weekDay": "Sat",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1113": {
+		"date": "November 13th",
+		"weekDay": "Sun",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1114": {
+		"date": "November 14th",
+		"weekDay": "Mon",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1115": {
+		"date": "November 15th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1116": {
+		"date": "November 16th",
+		"weekDay": "Wed",
+		"weather": "sun-cloud",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1117": {
+		"date": "November 17th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1118": {
+		"date": "November 18th",
+		"weekDay": "Fri",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1119": {
+		"date": "November 19th",
+		"weekDay": "Sat",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1120": {
+		"date": "November 20th",
+		"weekDay": "Sun",
+		"weather": "rain",
+		"dayAvail": "Y",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1121": {
+		"date": "November 21st",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1122": {
+		"date": "November 22nd",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1123": {
+		"date": "November 23rd",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1124": {
+		"date": "November 24th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1125": {
+		"date": "November 25th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1126": {
+		"date": "November 26th",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1127": {
+		"date": "November 27th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1128": {
+		"date": "November 28th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1129": {
+		"date": "November 29th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1130": {
+		"date": "November 30th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1201": {
+		"date": "December 1st",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1202": {
+		"date": "December 2nd",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1203": {
+		"date": "December 3rd",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1204": {
+		"date": "December 4th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1205": {
+		"date": "December 5th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "R",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1206": {
+		"date": "December 6th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1207": {
+		"date": "December 7th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "R",
+		"socialLinks": []
+	},
+	"1208": {
+		"date": "December 8th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1209": {
+		"date": "December 9th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1210": {
+		"date": "December 10th",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1211": {
+		"date": "December 11th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1212": {
+		"date": "December 12th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1213": {
+		"date": "December 13th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1214": {
+		"date": "December 14th",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1215": {
+		"date": "December 15th",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1216": {
+		"date": "December 16th",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1217": {
+		"date": "December 17th",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1218": {
+		"date": "December 18th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1219": {
+		"date": "December 19th",
+		"weekDay": "Mon",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1220": {
+		"date": "December 20th",
+		"weekDay": "Tue",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1221": {
+		"date": "December 21st",
+		"weekDay": "Wed",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1222": {
+		"date": "December 22nd",
+		"weekDay": "Thu",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1223": {
+		"date": "December 23rd",
+		"weekDay": "Fri",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "Y",
+		"socialLinks": []
+	},
+	"1224": {
+		"date": "December 24th",
+		"weekDay": "Sat",
+		"weather": "cloudy",
+		"dayAvail": "Y",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"1225": {
+		"date": "December 25th",
+		"weekDay": "Sun",
+		"weather": "cloudy",
+		"dayAvail": "N",
+		"nightAvail": "N",
+		"socialLinks": []
+	},
+	"0320": {
+		"date": "March 20th",
+		"weekDay": "Tue",
+		"weather": "sunny",
+		"dayAvail": "R",
+		"nightAvail": "N",
+		"socialLinks": []
+	}
 }
