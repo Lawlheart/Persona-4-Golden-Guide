@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" src="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" >
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' type='text/css'>
+	<link rel='stylesheet' href="http://persona.lawlietblack.com/js/animsition/animsition.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://persona.lawlietblack.com/js/animsition/jquery.animsition.min.js"></script>
 	<title>LawlietBlack | Persona 4 Golden</title>
 	<style>
 		body {
@@ -26,23 +29,23 @@
 			margin:10px 3% 0 0;
 			border-left: 40px solid #0E2C85;
 		}
-		.datecard, .daycard, .nightcard  {
+		.datecard, .daycard, .nightcard, #calendar, #error, .calcard {
 			width:80%;
 			margin:10px auto;
 			max-width: 800px;
 			box-shadow: 0 -5px 15px black;
 		}
-		.datecard {
+		.datecard, .calcard {
 			margin-top:40px;
 			border-top:10px solid red;
 			border-bottom:10px solid #0E2C85;
 		}
-		.daycard {
+		.daycard, #calendar, #error {
 			background-color: #FFBF00;
 			min-height: 400px;
 		}
 		.nightcard {
-			background-color: #0E2C85;
+			background-color: #5F5FC6;
 			min-height: 400px;
 		}
 		.date {
@@ -53,10 +56,19 @@
 			color:#070707;
 			height:60px;
 			text-shadow:
-    		-1px -1px 0 #ccc,
-    		1px -1px 0 #ccc,
-    		-1px 1px 0 #ccc,
-    		1px 1px 0 #ccc;  
+    		-2px -2px 1px #fff,
+    		2px -2px 1px #fff,
+    		-2px 2px 1px #fff,
+    		2px 2px 1px #fff; 
+		}
+		.linetexture {
+			background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%), linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%), linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%), linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+			background-size: 13px, 29px, 37px, 53px;
+		}
+		.radial {
+			background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.05) 99%), radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.05) 99%);
+			background-size:80px 80px;
+			background-position:0 0, 40px 40px;
 		}
 		.date img {
 			display:inline;
@@ -70,7 +82,7 @@
 			margin:0px 10px 10px;
 			font-size:34px;
 		}
-		h1.title {
+		h1.title, #error a {
 			margin:0;
 			padding:10px 30px;
     	text-shadow:
@@ -90,11 +102,20 @@
 			border-radius: 15px;
 			margin:0 10px;
 		}
-		.daycard .slinks img, .daycard .title {
+		.daycard .title {
 			background-color: #C06407;
 		}
-		.nightcard .slinks img, .nightcard .title {
-			background-color: #000850;
+		.nightcard .title {
+			background-color: #13138A;
+		}
+		.daycard .slinks img {
+			background: radial-gradient(transparent 60%, black) #C06407;
+		}
+		.nightcard .slinks img {
+			background: radial-gradient(transparent 60%, black) #13138A;
+		}
+		.daycard slinks img {
+			background: radial-gradient(transparent, black)
 		}
 		.notes {
 			margin:20px;
@@ -103,6 +124,48 @@
 			padding:0;
 			margin:10px 20px;
 		}
+		.btn {
+			width: 220px;
+			height: 40px;
+			background-color: #C06407;
+			border:3px solid #101010;
+			margin:20px auto;
+			border-radius:15px;
+		}
+		#error a {
+			text-decoration: none;
+			color:#101010;
+			text-align: center;
+			font-size:24px;
+			font-weight: bold;
+		}
+		.calcard, #calendar {
+			max-width: 1200px;
+		}
+		#calendar {
+			overflow: auto;
+		}
+		#calendar table{
+			background-color:#C06407;
+			
+			float:left;
+			overflow: auto;
+			width:260px;
+			margin:20px 2%;
+			height:200px;
+			text-align:center;
+		}
+		#calendar a {
+			text-decoration: none;
+			color:black;
+			font-weight: bold;
+			text-shadow:
+    		-1px -1px 0 #fff,
+    		1px -1px 0 #fff,
+    		-1px 1px 0 #fff,
+    		1px 1px 0 #fff;
+		}
 	</style>
 </head>
 <body>
+<div class="animsition">

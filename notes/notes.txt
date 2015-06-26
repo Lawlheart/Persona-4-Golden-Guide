@@ -1,11 +1,6 @@
-23rd +pri cha
-24th + cha
-25 + jus
-
-
 
 Link: Name 		Mon	Tue	Wed	Thurs 	Fri 	Sat	Sun 	Rain	Holid 	Starts
-Magician: Yosuke 	O	-	-	O	O	O	O 	X 		4/16
+Magician: Yosuke 	O	H	-	O	O	O	- 	X 		4/16
 Chariot: Chie  		O	O	-	O	-	O	- 	X 		4/18
 Aeon: Marie		-	-	O	-	-	O	O	X	O  	4/18
 Strength: Athletes	-	O	-	O	-	O	-	X 		4/19
@@ -15,16 +10,15 @@ Justice: Nanako		Varies									5/3
 Hermit: Fox		Any									5/5
 Hierophant: Dojima	Varies									5/6
 Jester: Adachi		Varies*									5/13
-Priestess: Yukiko	O	O	O	O	-	-	R 	X 		5/17
+Priestess: Yukiko	O	O	O	O	H	-	H 	X 		5/17
 Moon: Ai		-	-	O	O	O	-	R 	X 		*** 5/18
 Empress: Margaret	Any									5/20
 Devil: Sayoko		-	-	O	O	O	-	-	X 		5/25
 Tower: Shu		-	O	-	O	-	O	-	X 		5/25
-
-
-
 Death: Hisano		H	H	H	H	H	H	O	X		*** 6/5
 Emperor: Kanji		-	-	O	O	-	O	O 	X 		6/11
+
+
 Hanged Man: Naoki	O	O	O	O	-	-	- 	X 		6/20
 Lovers: Rise		-	-	-	-	O	O	O 	X 		7/23
 Fortune: Naoto		O	O	O	-	-	O	O 	X 		10/23
