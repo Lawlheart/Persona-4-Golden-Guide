@@ -1,4 +1,3 @@
-var Events = require("./events.js");
 var renderer = require("./renderer.js");
 var querystring = require("querystring");
 var commonHeaders = {'Content-Type': 'text/html'};
@@ -24,7 +23,7 @@ function home(request, response) {
 			response.writeHead(200, commonHeaders);
 			renderer.view('header', {}, response);
 			renderer.view('calendar', {}, response);
-			renderer.view('footer', {}, response);
+			renderer.view('homefooter', {}, response);
 			response.end();
 		} else {
 			//if url == "/" && POST
@@ -66,10 +65,10 @@ function date(request, response) {
 			"prevDay": prev,
 			"nextDay": next
 		}
-		//add the navigation arrows and the header
+		//add the navigation arrows
 		renderer.view('arrows', arrows, response);
 
-		//add the daytime card and loop through daytime social links to add the icons to the page
+		//add the title and daytime card and loop through daytime social links to add the icons to the page
 		renderer.view('datecard', currentDay, response);
 		for(var i=0;i<currentDay.socialLinks.length;i++) {
 			var link = {};
@@ -77,7 +76,7 @@ function date(request, response) {
 			renderer.view('slink', link, response);
 		}
 
-		// add the nighttime card and loop through nighttime social links to add the icons to the page
+		// add the nightcard.html and loop through nighttime social links to add the icons to the page
 		renderer.view('nightcard', currentDay, response);
 		for(var i=0;i<currentDay.nightLinks.length;i++) {
 			var link = {};
@@ -89,7 +88,7 @@ function date(request, response) {
 		response.end();
 	} else if(request.url !== '/'){
 		//show error page on all other urls
-		response.writeHead(200, commonHeaders);
+		response.writeHead(404, commonHeaders);
 			renderer.view('header', {}, response);
 			renderer.view('404', {}, response);
 			renderer.view('footer', {}, response);

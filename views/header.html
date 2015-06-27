@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" >
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css' >
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' type='text/css'>
-	<link rel='stylesheet' href="http://persona.lawlietblack.com/js/animsition/animsition.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="http://persona.lawlietblack.com/js/animsition/jquery.animsition.min.js"></script>
+	<link rel='stylesheet' href='http://persona.lawlietblack.com/js/animsition/animsition.css'>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+	<script src="http://persona.lawlietblack.com/js/animsition/jquery.animsition.min.js" type="text/javascript"></script>
 	<title>LawlietBlack | Persona 4 Golden</title>
 	<style>
 		body {
@@ -37,8 +38,6 @@
 		}
 		.datecard, .calcard {
 			margin-top:40px;
-			border-top:10px solid red;
-			border-bottom:10px solid #0E2C85;
 		}
 		.daycard, #calendar, #error {
 			background-color: #FFBF00;
@@ -49,21 +48,15 @@
 			min-height: 400px;
 		}
 		.date {
-			border-top:10px solid #FF5300;
-			background-color: #FFBF00;
-			border-bottom:10px solid green;
+			background-image: url('http://lawlietblack.com/img/personabg.png');
 			margin:0;
 			color:#070707;
-			height:60px;
+			height:100px;
 			text-shadow:
     		-2px -2px 1px #fff,
     		2px -2px 1px #fff,
     		-2px 2px 1px #fff,
     		2px 2px 1px #fff; 
-		}
-		.linetexture {
-			background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%), linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%), linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%), linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-			background-size: 13px, 29px, 37px, 53px;
 		}
 		.radial {
 			background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.05) 99%), radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.05) 99%);
@@ -74,22 +67,22 @@
 			display:inline;
 			height:100px;
 			width:100px;
-			margin:-20px 0;
+			margin:0;
 		}
-		.date h1 {
+		.date h1, .jumbotron h1 {
 			display:inline-block;
 			vertical-align: text-bottom;
-			margin:0px 10px 10px;
-			font-size:34px;
+			margin:0 10px 20px;
+			font-size:46px;
 		}
 		h1.title, #error a {
 			margin:0;
 			padding:10px 30px;
     	text-shadow:
-    		-2px -2px 1px #ddd,
-    		2px -2px 1px #ddd,
-    		-2px 2px 1px #ddd,
-    		2px 2px 1px #ddd;  
+    		-2px -2px 1px #fff,
+    		2px -2px 1px #fff,
+    		-2px 2px 1px #fff,
+    		2px 2px 1px #fff;  
 		}
 		li {
 			list-style: none;
@@ -102,14 +95,14 @@
 			border-radius: 15px;
 			margin:0 10px;
 		}
-		.daycard .title {
-			background-color: #C06407;
+		.daycard .title, #calendar .title {
+			background-color: #e76508;
 		}
 		.nightcard .title {
 			background-color: #13138A;
 		}
 		.daycard .slinks img {
-			background: radial-gradient(transparent 60%, black) #C06407;
+			background: radial-gradient(transparent 60%, black) #e76508;
 		}
 		.nightcard .slinks img {
 			background: radial-gradient(transparent 60%, black) #13138A;
@@ -127,7 +120,7 @@
 		.btn {
 			width: 220px;
 			height: 40px;
-			background-color: #C06407;
+			background-color: #e76508;
 			border:3px solid #101010;
 			margin:20px auto;
 			border-radius:15px;
@@ -139,21 +132,31 @@
 			font-size:24px;
 			font-weight: bold;
 		}
-		.calcard, #calendar {
+		.jumbotron, #calendar {
 			max-width: 1200px;
+		}
+		.jumbotron {
+		  background-image:url('http://lawlietblack.com/img/p4banner.jpg');
+		  width:80%;
+		  margin:40px auto 0;
+		  height: 400px;
+		  background-repeat: no-repeat;
+		  background-size: cover;
 		}
 		#calendar {
 			overflow: auto;
+			margin:10px auto 20px;
 		}
-		#calendar table{
-			background-color:#C06407;
-			
+		.cal{
+			background-image: repeating-linear-gradient(45deg, rgba(231,101,8,.25), rgba(231,101,8,.25) 35px, rgba(231,101,8,.5) 35px, rgba(231,101,8,.5) 70px);
 			float:left;
 			overflow: auto;
-			width:260px;
-			margin:20px 2%;
+			width:30%;
+			min-width: 200px;
+			margin:20px 1.66%;
 			height:200px;
 			text-align:center;
+			
 		}
 		#calendar a {
 			text-decoration: none;
@@ -165,6 +168,18 @@
     		-1px 1px 0 #fff,
     		1px 1px 0 #fff;
 		}
+		#calendar caption {
+			font-size: 24px;
+			font-weight:bold;
+			color:#fff;
+		}
+		#calendar thead {
+			color:#fff;
+		}
+		#calendar thead, #calendar caption {
+			background-color:#e76508;
+		}
+
 	</style>
 </head>
 <body>
