@@ -1,3 +1,12 @@
+Progress: 
+Weather complete
+Social links through 6-18
+exams/questions complete
+
+To do:
+finish s.Links and test them
+finish exam questions
+
 
 Link: Name 		Mon	Tue	Wed	Thurs 	Fri 	Sat	Sun 	Rain	Holid 	Starts
 Magician: Yosuke 	O	H	-	O	O	O	- 	X 		4/16

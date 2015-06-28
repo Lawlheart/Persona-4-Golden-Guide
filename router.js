@@ -10,10 +10,10 @@ for(key in calendar) {
 }
 //sorts the array into the correct calendar order
 datesArray.sort();
-var year2011 = datesArray.slice(48)
-var year2012 = datesArray.slice(0,48)
+var endDate = datesArray.indexOf('0320')
+var year2011 = datesArray.slice(endDate+1)
+var year2012 = datesArray.slice(0,endDate+1)
 datesArray = year2011.concat(year2012);
-
 //Handle HTTP route GET / and POST / i.e. Home
 function home(request, response) {
 	//if url == "/" && GET
@@ -68,20 +68,36 @@ function date(request, response) {
 		//add the navigation arrows
 		renderer.view('arrows', arrows, response);
 
-		//add the title and daytime card and loop through daytime social links to add the icons to the page
+		//add the title and spoilers
 		renderer.view('datecard', currentDay, response);
-		for(var i=0;i<currentDay.socialLinks.length;i++) {
-			var link = {};
-			link.name = currentDay.socialLinks[i];
-			renderer.view('slink', link, response);
+		for(var i=0;i<currentDay.spoilers.length;i++) {
+			var spoiler = currentDay.spoilers[i]
+			renderer.view('spoiler',spoiler,response);
+		}
+
+		//add the social link title and loop through daytime social links to add the icons to the page
+		if(currentDay.socialLinks.length>0) {
+			renderer.view('slinktitle', {}, response);
+			renderer.view('slinkstart', {}, response);
+			for(var i=0;i<currentDay.socialLinks.length;i++) {
+				var link = {};
+				link.name = currentDay.socialLinks[i];
+				renderer.view('slink', link, response);
+			}
+			renderer.view('slinkend', {}, response);
 		}
 
 		// add the nightcard.html and loop through nighttime social links to add the icons to the page
 		renderer.view('nightcard', currentDay, response);
-		for(var i=0;i<currentDay.nightLinks.length;i++) {
-			var link = {};
-			link.name = currentDay.nightLinks[i];
-			renderer.view('slink', link, response);
+		if(currentDay.nightLinks.length>0) {
+			renderer.view('slinktitle', {}, response);
+			renderer.view('slinkstart', {}, response);
+			for(var i=0;i<currentDay.nightLinks.length;i++) {
+				var link = {};
+				link.name = currentDay.nightLinks[i];
+				renderer.view('slink', link, response);
+			}
+			renderer.view('slinkend', {}, response);
 		}
 		//add the footer
 		renderer.view('footer', {}, response);

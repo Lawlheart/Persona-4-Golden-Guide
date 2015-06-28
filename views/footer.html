@@ -1,12 +1,26 @@
+
 </div>
+<a 
+	href="/" 
+	id="return"
+	class="animsition-link" 
+	data-animsition-out="fade-out-up" 
+	data-animsition-out-duration="300"
+>
+<div class="btn">Back to home</div></a>
 </div>
 <script>
-	
 	$('.animsition').animsition({
 		inClass: 'fade-in-right', 
 		inDuration: 500,
 	});
-
+	$('.spoiler span').hide();
+	$('button').click(function(){
+		// Show spoilers
+		$(this).prev().show();
+		// Get rid of button
+		$(this).remove();
+	});
 </script>
 </body>
 </html>
