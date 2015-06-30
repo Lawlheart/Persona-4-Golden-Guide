@@ -1,15 +1,21 @@
 Progress: 
 Weather complete
-Social links through 6-18
+Social links through 10-22
 exams/questions complete
 
 To do:
 finish s.Links and test them
-finish exam questions
+add pages for s.links and link them to days
+
+Future Features
+persona pages
+fusion calculator
+skill cards guide
+
 
 
 Link: Name 		Mon	Tue	Wed	Thurs 	Fri 	Sat	Sun 	Rain	Holid 	Starts
-Magician: Yosuke 	O	H	-	O	O	O	- 	X 		4/16
+Magician: Yosuke 	O	H	-	O	O	O	O 	X 		4/16
 Chariot: Chie  		O	O	-	O	-	O	- 	X 		4/18
 Aeon: Marie		-	-	O	-	-	O	O	X	O  	4/18
 Strength: Athletes	-	O	-	O	-	O	-	X 		4/19

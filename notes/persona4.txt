@@ -14,10 +14,8 @@ cards or portraits or icons showing which characters are available, potentially 
 
 
 //Brigette's notes
-	home/return button
-	also maybe but midterm answers on the midterms page with spoiler button
+	home/return button(DONE)
+	also maybe but midterm answers on the midterms page with spoiler button(DONE)
 
 //Monika's notes
-	needs some more explanation on what it is, for people other than me who might want to use it,
-	need a bigger header too
-	since it's the starting page, there needs to be a little more impact
+	needs some more explanation on what it is, for people other than me who might want to use it,need a bigger header too, since it's the starting page, there needs to be a little more impact
