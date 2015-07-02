@@ -1,16 +1,20 @@
 Progress: 
 Weather complete
-Social links through 10-22
+Social links through 12-9
 exams/questions complete
 
 To do:
 finish s.Links and test them
 add pages for s.links and link them to days
+add media queries to make the page responsive
+add a favicon
+add images to test days, midnight channel nights, and events to make the pages less sparse
 
 Future Features
 persona pages
 fusion calculator
 skill cards guide
+possible dungeon guide (after persona pages)
 
 
 
@@ -37,6 +41,12 @@ Emperor: Kanji		-	-	O	O	-	O	O 	X 		6/11
 Hanged Man: Naoki	O	O	O	O	-	-	- 	X 		6/20
 Lovers: Rise		-	-	-	-	O	O	O 	X 		7/23
 Fortune: Naoto		O	O	O	-	-	O	O 	X 		10/23
+
+
+add July 16th day to jester
+july 13rd formaldehyde
+jul 24th - move notes from night to day
+
 
 *
 May      | 13(F), 20 (F), 23(M), 25(W) 27(F), 30(M)                     |

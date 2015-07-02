@@ -1,5 +1,5 @@
 
-</div><!--close nightcard-->
+</div><!--close #arcana-->
 <a 
 	href="/" 
 	id="return"
@@ -11,15 +11,13 @@
 </div><!--close animsition div-->
 <script>
 	$('.animsition').animsition({
-		inClass: 'fade-in-right', 
+		inClass: 'fade-in-up', 
 		inDuration: 500,
 	});
-	$('.spoiler span').hide();
-	$('button').click(function(){
+	$('ul.dates').hide();
+	$('.dates-title').click(function(){
 		// Show spoilers
-		$(this).prev().show();
-		// Get rid of button
-		$(this).remove();
+		$(this).next().toggle();
 	});
 </script>
 </body>

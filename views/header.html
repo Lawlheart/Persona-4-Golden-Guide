@@ -14,6 +14,9 @@
 			background-color: #202020;
 			font-family: 'Open Sans', sans-serif;
 		}
+		* ul {
+			list-style: none;
+		}
 		.arrow {
 			width: 0; 
 			height: 0; 
@@ -33,16 +36,15 @@
 		.daycard, .nightcard {
 			padding-bottom:40px;
 		}
-		.datecard, .daycard, .nightcard, #calendar, #error, .calcard {
+		.datecard, .daycard, .nightcard, #calendar, #error, .calcard, #arcana {
 			width:80%;
 			margin:10px auto;
-			max-width: 800px;
 			box-shadow: 0 -5px 15px black;
 		}
-		.datecard, .calcard {
+		.datecard, .calcard, #arcana {
 			margin-top:40px;
 		}
-		.daycard, #calendar, #error {
+		.daycard, #calendar, #error, #arcana {
 			background-color: #FFBF00;
 			min-height: 400px;
 		}
@@ -50,7 +52,7 @@
 			background-color: #5F5FC6;
 			min-height: 400px;
 		}
-		.date {
+		.date, .arcana-header {
 			background-image: url('http://lawlietblack.com/img/personabg.png');
 			margin:0;
 			color:#070707;
@@ -106,7 +108,7 @@
     		-2px 2px 1px #fff,
     		2px 2px 1px #fff;  
 		}
-		li {
+		.slinks li {
 			list-style: none;
 			display: inline;
 		}
@@ -153,9 +155,6 @@
 			text-align: center;
 			font-size:24px;
 			font-weight: bold;
-		}
-		.jumbotron, #calendar {
-			max-width: 1200px;
 		}
 		.jumbotron {
 		  background:url('http://lawlietblack.com/img/p4banner.jpg');
@@ -234,6 +233,51 @@
 			margin-top:20px;
 			display:block;
 		}
+
+		#arcana {
+			padding-bottom:10px;
+		}
+		.arcana-header {
+			height:120px;
+			background:rgba(19, 19, 88,1);
+		}
+		.arcana-header h1 {
+			margin:20px 20px 0;
+		}
+		.arcana-header h2 {
+			margin:0 20px;
+		}
+		#arcana img.portrait {
+			height:120px;
+			width:120px;
+			float:left;
+		}
+		#arcana .title{
+			display:inline-block;
+		}
+		#arcana .dates-title, #arcana ul.dates {
+			width:90%;
+			padding:10px;
+		}
+
+		.dates-title {
+			background:rgba(19, 19, 88,1);
+			margin:20px auto 0;
+			color:black;
+			text-shadow:
+    		-1px -1px 1px #fff,
+    		1px -1px 1px #fff,
+    		-1px 1px 1px #fff,
+    		1px 1px 1px #fff;  
+    	cursor:pointer;
+		}
+		#arcana ul.dates {
+			background:rgba(19, 19, 108,.8);
+			margin:0 auto 20px;
+
+		}
+
+
 	</style>
 </head>
 <body>

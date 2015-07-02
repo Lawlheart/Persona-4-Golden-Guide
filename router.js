@@ -2,18 +2,10 @@ var renderer = require("./renderer.js");
 var querystring = require("querystring");
 var commonHeaders = {'Content-Type': 'text/html'};
 var calendar = require('./calendar.json');
+var persona = require('./persona.js');
+var arcana = require('./arcana.js');
+var dates = require('./dates.js');
 
-//create an array of dates for the arrow navigation
-var datesArray = []
-for(key in calendar) {
-	datesArray.push(key)
-}
-//sorts the array into the correct calendar order
-datesArray.sort();
-var endDate = datesArray.indexOf('0320')
-var year2011 = datesArray.slice(endDate+1)
-var year2012 = datesArray.slice(0,endDate+1)
-datesArray = year2011.concat(year2012);
 //Handle HTTP route GET / and POST / i.e. Home
 function home(request, response) {
 	//if url == "/" && GET
@@ -41,26 +33,26 @@ function home(request, response) {
 //Handle HTTP route GET /:date
 function date(request, response) {
 	//get the date to display from the url
-	var searchDate = request.url.replace("/", "");
+	var search = request.url.replace("/", "");
 
 	//disables favicon search that causes double console.log-ing
 	if (request.url === '/favicon.ico') {
     response.writeHead(200, {'Content-Type': 'image/x-icon'} );
     response.end();
     return;
-  } else if(datesArray.indexOf(searchDate) >= 0) {
+  } else if(dates.indexOf(search) >= 0) {
 		
 		//start writing html for page
 		response.writeHead(200, commonHeaders);
 		
 		//get the current day from the calendar Object
-		var currentDay = calendar[searchDate];
+		var currentDay = calendar[search];
 		renderer.view('header', {}, response);
 		
 		//create nagivation links, redirecting the earliest and latest dates in the array back to the current date
-		var currentIndex = datesArray.indexOf(searchDate)
-		var prev = datesArray[currentIndex-1] === undefined ? datesArray[currentIndex]: datesArray[currentIndex-1];
-		var next = datesArray[currentIndex+1] === undefined ? datesArray[currentIndex]: datesArray[currentIndex+1]
+		var currentIndex = dates.indexOf(search)
+		var prev = dates[currentIndex-1] === undefined ? dates[currentIndex]: dates[currentIndex-1];
+		var next = dates[currentIndex+1] === undefined ? dates[currentIndex]: dates[currentIndex+1]
 		var arrows = {
 			"prevDay": prev,
 			"nextDay": next
@@ -71,36 +63,53 @@ function date(request, response) {
 		//add the title and spoilers
 		renderer.view('datecard', currentDay, response);
 		for(var i=0;i<currentDay.spoilers.length;i++) {
-			var spoiler = currentDay.spoilers[i]
-			renderer.view('spoiler',spoiler,response);
-		}
+      var spoiler = currentDay.spoilers[i]
+      renderer.view('spoiler',spoiler,response);
+      }
 
 		//add the social link title and loop through daytime social links to add the icons to the page
 		if(currentDay.socialLinks.length>0) {
-			renderer.view('slinktitle', {}, response);
-			renderer.view('slinkstart', {}, response);
-			for(var i=0;i<currentDay.socialLinks.length;i++) {
-				var link = {};
-				link.name = currentDay.socialLinks[i];
-				renderer.view('slink', link, response);
-			}
-			renderer.view('slinkend', {}, response);
+			response.write("<h2 class='slinks'>Social Links Available</h2><ul class='slinks'>");
+			renderer.loop('slink', currentDay.socialLinks, response);
+			response.write("</ul>");
 		}
 
 		// add the nightcard.html and loop through nighttime social links to add the icons to the page
 		renderer.view('nightcard', currentDay, response);
 		if(currentDay.nightLinks.length>0) {
-			renderer.view('slinktitle', {}, response);
-			renderer.view('slinkstart', {}, response);
-			for(var i=0;i<currentDay.nightLinks.length;i++) {
-				var link = {};
-				link.name = currentDay.nightLinks[i];
-				renderer.view('slink', link, response);
-			}
-			renderer.view('slinkend', {}, response);
+			response.write("<h2 class='slinks'>Social Links Available</h2><ul class='slinks'>");
+			renderer.loop('slink', currentDay.nightLinks, response);
+			response.write("</ul>");
 		}
 		//add the footer
 		renderer.view('footer', {}, response);
+		response.end();
+	} else if (arcana.list.indexOf(search)>=0) {
+		var search = request.url.replace("/", "");
+		//write the header, including css
+		response.writeHead(200, commonHeaders);
+		renderer.view('header', {}, response);
+		
+		//generate the arcana object
+		var capSearch = search[0].toUpperCase() + search.slice(1);
+		var Arcana = {
+			arcana:capSearch,
+			name:arcana[search],
+			img:search
+		}
+		
+		renderer.view('arcana', Arcana, response);
+		if(persona.arcanaDays(search).length>0) {
+			response.write("<h3 class='dates-title'>Days Available</h3><ul class='dates'>");
+			renderer.loop('arcanaDays', persona.arcanaDays(search), response);
+			response.write("</ul>");
+		}
+		if(persona.bikeRides(search).length>0) {
+			response.write("<h3 class='dates-title'>Bike Ride Days</h3><ul class='dates'>")
+			renderer.loop('arcanadays', persona.bikeRides(search), response);
+			response.write("</ul>");
+		}
+		renderer.view('arcanafooter',{} , response);
 		response.end();
 	} else if(request.url !== '/'){
 		//show error page on all other urls
