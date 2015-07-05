@@ -9,12 +9,14 @@ add pages for s.links and link them to days
 add media queries to make the page responsive
 add a favicon
 add images to test days, midnight channel nights, and events to make the pages less sparse
+add an explaination on the front page about what the site is for - i.e. unobtrusive spoiler-free/light guide on choices
 
 Future Features
 persona pages
 fusion calculator
 skill cards guide
 possible dungeon guide (after persona pages)
+tooltips with notes on the various social links i.e. adachi's wierd stuff, when links open, etc
 
 
 

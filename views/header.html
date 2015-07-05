@@ -10,6 +10,7 @@
 	<script src="http://persona.lawlietblack.com/js/animsition/jquery.animsition.min.js" type="text/javascript"></script>
 	<title>LawlietBlack | Persona 4 Golden</title>
 	<style>
+	/*General*/
 		body {
 			background-color: #202020;
 			font-family: 'Open Sans', sans-serif;
@@ -17,6 +18,7 @@
 		* ul {
 			list-style: none;
 		}
+	/*Navigation Arrows*/
 		.arrow {
 			width: 0; 
 			height: 0; 
@@ -33,6 +35,7 @@
 			margin:10px 3% 0 0;
 			border-left: 40px solid #0E2C85;
 		}
+	/*Dates Pages*/	
 		.daycard, .nightcard {
 			padding-bottom:40px;
 		}
@@ -52,7 +55,7 @@
 			background-color: #5F5FC6;
 			min-height: 400px;
 		}
-		.date, .arcana-header {
+		.date{
 			background-image: url('http://lawlietblack.com/img/personabg.png');
 			margin:0;
 			color:#070707;
@@ -74,25 +77,6 @@
 			width:100px;
 			margin:0;
 		}
-		.jumbotron h1 {
-			color: #fff;
-			font-size:46px;
-			padding:10px 20px;
-    	text-shadow: 
-    		0 1px 1px #444,
-				0 2px 1px #333,
-				0 3px 1px #222,
-				0 4px 1px #111,
-				0 5px 1px #000,
-				10px 10px 20px rgba(231,171,8,0.9),
-				-10px 10px 20px rgba(231,171,8,0.9),
-				-10px -10px 20px rgba(231,171,8,0.9),
-				10px -10px 20px rgba(231,171,8,0.9),
-				10px 10px 20px rgba(231,171,8,0.9),
-				-10px 10px 20px rgba(231,171,8,0.9),
-				10px -10px 20px rgba(231,171,8,0.9),
-				10px 10px 20px rgba(231,171,8,0.9);
-    }
 		.date h1 {
 			display:inline-block;
 			vertical-align: text-bottom;
@@ -141,6 +125,7 @@
 			padding:0;
 			margin:10px 20px;
 		}
+	/*Error Page*/
 		.btn {
 			width: 220px;
 			height: 40px;
@@ -156,15 +141,34 @@
 			font-size:24px;
 			font-weight: bold;
 		}
+	/*Calendar Page*/
 		.jumbotron {
 		  background:url('http://lawlietblack.com/img/p4banner.jpg');
-
 		  width:80%;
 		  margin:40px auto 0;
 		  height: 400px;
 		  background-repeat: no-repeat;
 		  background-size: cover;
 		}
+		.jumbotron h1 {
+			color: #fff;
+			font-size:46px;
+			padding:10px 20px;
+    	text-shadow: 
+    		0 1px 1px #444,
+				0 2px 1px #333,
+				0 3px 1px #222,
+				0 4px 1px #111,
+				0 5px 1px #000,
+				10px 10px 20px rgba(231,171,8,0.9),
+				-10px 10px 20px rgba(231,171,8,0.9),
+				-10px -10px 20px rgba(231,171,8,0.9),
+				10px -10px 20px rgba(231,171,8,0.9),
+				10px 10px 20px rgba(231,171,8,0.9),
+				-10px 10px 20px rgba(231,171,8,0.9),
+				10px -10px 20px rgba(231,171,8,0.9),
+				10px 10px 20px rgba(231,171,8,0.9);
+    }
 		#calendar {
 			overflow: auto;
 			margin:10px auto 20px;
@@ -201,6 +205,7 @@
 		#calendar thead, #calendar caption {
 			background-color:#e76508;
 		}
+	/*Spoiler Buttons*/
 		button, .spoiler {
 			height:100px;
 		}
@@ -233,18 +238,25 @@
 			margin-top:20px;
 			display:block;
 		}
-
+	/*Arcana Pages*/
 		#arcana {
 			padding-bottom:10px;
+			min-height: 600px;
 		}
-		.arcana-header {
+		#arcana .arcana-header {
 			height:120px;
 			background:rgba(19, 19, 88,1);
+			color:#000;
+			text-shadow:
+    		-2px -2px 1px #fff,
+    		2px -2px 1px #fff,
+    		-2px 2px 1px #fff,
+    		2px 2px 1px #fff; 
 		}
-		.arcana-header h1 {
+		#arcana .arcana-header h1 {
 			margin:20px 20px 0;
 		}
-		.arcana-header h2 {
+		#arcana .arcana-header h2 {
 			margin:0 20px;
 		}
 		#arcana img.portrait {
@@ -255,13 +267,13 @@
 		#arcana .title{
 			display:inline-block;
 		}
-		#arcana .dates-title, #arcana ul.dates {
+		#arcana .dates-title, #arcana ul.dates, #arcana .rank-title, #arcana div.dialog, #arcana div.notes {
 			width:90%;
 			padding:10px;
 		}
 
-		.dates-title {
-			background:rgba(19, 19, 88,1);
+		#arcana .dates-title, #arcana .rank-title {
+			background:rgba(19, 19, 58,1);
 			margin:20px auto 0;
 			color:black;
 			text-shadow:
@@ -270,14 +282,44 @@
     		-1px 1px 1px #fff,
     		1px 1px 1px #fff;  
     	cursor:pointer;
+    	border-bottom: 1px solid rgba(19, 19, 38,1);
 		}
-		#arcana ul.dates {
+		#arcana ul.dates, #arcana div.dialog {
 			background:rgba(19, 19, 108,.8);
 			margin:0 auto 20px;
-
 		}
-
-
+		#arcana .rank-title, #arcana div.dialog {
+			margin:0 auto;
+		}
+		#arcana div.notes {
+			margin:20px auto;
+			background:rgba(19, 19, 58,1);
+			min-height:100px;
+		}
+		.with, .without {
+			float:right;
+			display:inline-block;
+			width:70px;
+			text-align: center;
+			margin:0px 5px;
+			border-radius:2px;
+		}
+		.with {
+			background-color: rgba(19, 108, 19,1);
+		}
+		ul.answers li {
+			margin:4px 0;
+		}
+	/*Media Queries*/
+		@media screen and (max-width: 1000px) {
+			.date h1, h1.title {
+				font-size: 34px; 
+			}
+		@media screen and (max-width: 700px) {
+			.date h1, h1.title {
+				font-size: 26px; 
+			}
+		}
 	</style>
 </head>
 <body>

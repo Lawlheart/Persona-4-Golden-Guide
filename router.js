@@ -5,7 +5,6 @@ var calendar = require('./calendar.json');
 var persona = require('./persona.js');
 var arcana = require('./arcana.js');
 var dates = require('./dates.js');
-
 //Handle HTTP route GET / and POST / i.e. Home
 function home(request, response) {
 	//if url == "/" && GET
@@ -90,20 +89,50 @@ function date(request, response) {
 		response.writeHead(200, commonHeaders);
 		renderer.view('header', {}, response);
 		
-		//generate the arcana object
-		var capSearch = search[0].toUpperCase() + search.slice(1);
-		var Arcana = {
-			arcana:capSearch,
-			name:arcana[search],
-			img:search
-		}
-		
+		//render the title bar
+		var Arcana = arcana[search];
 		renderer.view('arcana', Arcana, response);
+
+		//render the notes
+		response.write('<div class="notes">'+ (Arcana.notes === undefined? "":Arcana.notes) +'</div>')
+
+		//render the social link ranks
+		if(Arcana.rank !== undefined) {
+			response.write('<h3 class="rank-title">Rank 1</h3>');
+			response.write('<div class="dialog"><h4>' + Arcana.rank[0] + '</h4></div>')
+		
+			for(var i=1;i<Arcana.rank.length;i++) {
+				var rank = Arcana.rank[i]
+				response.write('<h3 class="rank-title">'+rank.rank+'</h3>')
+
+				//render the dialog options
+				response.write("<div class='dialog'>")
+				//render the notes
+				if(rank.notes !== "") {
+					response.write('<h4>'+rank.notes+'</h4>')
+				}
+				for(var j=0;j<rank.dialog.length;j++) {
+					var dialog = rank.dialog[j];
+					response.write('<h4>'+dialog.question+'</h4>')
+					//render the answers
+					var answers = dialog.answers;
+					response.write("<ul class='answers'>")
+					for(var k=0;k<answers.length;k++) {
+						response.write("<li>"+ answers[k][0]+"<span class='with'>"+answers[k][2]+"</span><span class='without'>"+answers[k][1]+"</span></li>")
+					}
+					response.write("</ul>")
+				}
+				response.write("</div>")
+			}
+		}
+		//render the days available
 		if(persona.arcanaDays(search).length>0) {
 			response.write("<h3 class='dates-title'>Days Available</h3><ul class='dates'>");
-			renderer.loop('arcanaDays', persona.arcanaDays(search), response);
+			renderer.loop('arcanadays', persona.arcanaDays(search), response);
 			response.write("</ul>");
 		}
+
+		//render the bike days
 		if(persona.bikeRides(search).length>0) {
 			response.write("<h3 class='dates-title'>Bike Ride Days</h3><ul class='dates'>")
 			renderer.loop('arcanadays', persona.bikeRides(search), response);
