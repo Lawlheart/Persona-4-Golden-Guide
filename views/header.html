@@ -39,7 +39,7 @@
 		.daycard, .nightcard {
 			padding-bottom:40px;
 		}
-		.datecard, .daycard, .nightcard, #calendar, #error, .calcard, #arcana {
+		.datecard, .daycard, .nightcard, #calendar, #error, .calcard {
 			width:80%;
 			margin:10px auto;
 			box-shadow: 0 -5px 15px black;
@@ -240,8 +240,10 @@
 		}
 	/*Arcana Pages*/
 		#arcana {
+			width:100%;
+			margin:0 auto;
 			padding-bottom:10px;
-			min-height: 600px;
+			min-height: 100%;
 		}
 		#arcana .arcana-header {
 			height:120px;
@@ -273,7 +275,7 @@
 		}
 
 		#arcana .dates-title, #arcana .rank-title {
-			background:rgba(19, 19, 58,1);
+			background:rgba(19, 19, 58,0.8);
 			margin:20px auto 0;
 			color:black;
 			text-shadow:
@@ -285,7 +287,7 @@
     	border-bottom: 1px solid rgba(19, 19, 38,1);
 		}
 		#arcana ul.dates, #arcana div.dialog {
-			background:rgba(19, 19, 108,.8);
+			background:rgba(19, 19, 40,.5);
 			margin:0 auto 20px;
 		}
 		#arcana .rank-title, #arcana div.dialog {
@@ -293,8 +295,9 @@
 		}
 		#arcana div.notes {
 			margin:20px auto;
-			background:rgba(19, 19, 58,1);
+			background:rgba(19, 19, 58,0.8);
 			min-height:100px;
+			border-radius: 10px;
 		}
 		.with, .without {
 			float:right;
