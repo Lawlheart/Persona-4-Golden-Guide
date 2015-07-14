@@ -13,8 +13,7 @@ function home(request, response) {
 			//show calendar page
 			response.writeHead(200, commonHeaders);
 			renderer.view('header', {}, response);
-			renderer.view('calendar', {}, response);
-			renderer.view('homefooter', {}, response);
+			renderer.view('home', {}, response);
 			response.end();
 		} else {
 			//if url == "/" && POST
@@ -39,6 +38,32 @@ function date(request, response) {
     response.writeHead(200, {'Content-Type': 'image/x-icon'} );
     response.end();
     return;
+  } else if(request.url === '/calendar') {
+		//show calendar page
+		response.writeHead(200, commonHeaders);
+		renderer.view('header', {}, response);
+		renderer.view('calendar', {}, response);
+		renderer.view('calfooter', {}, response);
+		response.end();
+  } else if(request.url === '/trivia') {
+  	//render trivia page
+ 		response.writeHead(200, commonHeaders);
+		renderer.view('header', {}, response);
+		renderer.view('trivia', {}, response);
+		renderer.view('footer', {}, response);
+		response.end();
+  } else if(request.url === '/slinks') {
+  	//render slinks page
+ 		response.writeHead(200, commonHeaders);
+		renderer.view('header', {}, response);
+		response.write("<div id='arcana'>");
+		for(var i=0;i<arcana.list.length;i++) {
+			slink = arcana[arcana.list[i]]
+			response.write('<div class="arcana-header tile" ><img src="http://lawlietblack.com/img/' + slink.img + '.png" class="portrait" alt=""><div class="title"><h1>' + slink.arcana + ' Arcana</h1><h2>' + slink.name + '</h2></div><img class="card" alt="'+slink.img+'" src="http://lawlietblack.com/img/cards/' + slink.img + '-card.png"></div>');
+		}
+		//<div class="arcana-header" ><img src="http://lawlietblack.com/img/{{img}}.png" class="portrait" alt=""><div class="title"><h1>{{arcana}} Arcana</h1><h2>{{name}}</h2></div>
+		renderer.view('footer', {}, response);
+		response.end();
   } else if(dates.indexOf(search) >= 0) {
 		
 		//start writing html for page
@@ -56,11 +81,13 @@ function date(request, response) {
 			"prevDay": prev,
 			"nextDay": next
 		}
-		//add the navigation arrows
-		renderer.view('arrows', arrows, response);
 
 		//add the title and spoilers
 		renderer.view('datecard', currentDay, response);
+		//add the navigation arrows
+		renderer.view('arrows', arrows, response);
+		//add the daycard and spoilers
+		renderer.view('daycard', currentDay, response);
 		for(var i=0;i<currentDay.spoilers.length;i++) {
       var spoiler = currentDay.spoilers[i]
       renderer.view('spoiler',spoiler,response);
@@ -118,7 +145,7 @@ function date(request, response) {
 					var answers = dialog.answers;
 					response.write("<ul class='answers'>")
 					for(var k=0;k<answers.length;k++) {
-						response.write("<li>"+ answers[k][0]+"<span class='with'>"+answers[k][2]+"</span><span class='without'>"+answers[k][1]+"</span></li>")
+						response.write("<li><span class='response'>"+ answers[k][0]+"</span><span class='with'>"+answers[k][2]+"</span><span class='without'>"+answers[k][1]+"</span></li>")
 					}
 					response.write("</ul>")
 				}
