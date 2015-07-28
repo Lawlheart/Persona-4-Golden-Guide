@@ -1,65 +1,26 @@
-	<div id="calendar">
-		<h1>Calendar</h1>
-		<table id="april" class="cal">
-			<caption>April</caption>
-			<thead>
-				<tr>
-					<th>Su</th>
-					<th>M</th>
-					<th>T</th>
-					<th>W</th>
-					<th>Th</th>
-					<th>F</th>
-					<th>S</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan=5> </td>
-					<td>1</td>
-					<td>2</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
-				</tr>
-				<tr>
-					<td>10</td>
-					<td><a href="/0411" class="animsition-link">11</a></td>
-					<td><a href="/0412" class="animsition-link">12</a></td>
-					<td><a href="/0413" class="animsition-link">13</a></td>
-					<td><a href="/0414" class="animsition-link">14</a></td>
-					<td><a href="/0415" class="animsition-link">15</a></td>
-					<td><a href="/0416" class="animsition-link">16</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0417" class="animsition-link">17</a></td>
-					<td><a href="/0418" class="animsition-link">18</a></td>
-					<td><a href="/0419" class="animsition-link">19</a></td>
-					<td><a href="/0420" class="animsition-link">20</a></td>
-					<td><a href="/0421" class="animsition-link">21</a></td>
-					<td><a href="/0422" class="animsition-link">22</a></td>
-					<td><a href="/0423" class="animsition-link">23</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0424" class="animsition-link">24</a></td>
-					<td><a href="/0425" class="animsition-link">25</a></td>
-					<td><a href="/0426" class="animsition-link">26</a></td>
-					<td><a href="/0427" class="animsition-link">27</a></td>
-					<td><a href="/0428" class="animsition-link">28</a></td>
-					<td><a href="/0429" class="animsition-link">29</a></td>
-					<td><a href="/0430" class="animsition-link">30</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="may" class="cal">
-			<caption>May</caption>
-			<thead>
+{% extends 'layout.html' %}
+
+
+{% block head %}{% endblock %}
+
+{% block nav %}
+		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../">Home</a></li>
+		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="/days/">Calendar</a></li>
+		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../slinks">Social Links</a></li>
+		<li class="right"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../trivia">Trivia</a></li>
+{% endblock %}
+
+{% block title %}Calendar{% endblock %}
+
+
+
+{% block content %}
+<div id="calendar">
+	<h1>Calendar</h1>
+	<table id="april" class="cal">
+		<caption>April</caption>
+		<thead>
+			<tr>
 				<th>Su</th>
 				<th>M</th>
 				<th>T</th>
@@ -67,607 +28,666 @@
 				<th>Th</th>
 				<th>F</th>
 				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td><a href="/0501" class="animsition-link">1</a></td>
-					<td><a href="/0502" class="animsition-link">2</a></td>
-					<td><a href="/0503" class="animsition-link">3</a></td>
-					<td><a href="/0504" class="animsition-link">4</a></td>
-					<td><a href="/0505" class="animsition-link">5</a></td>
-					<td><a href="/0506" class="animsition-link">6</a></td>
-					<td><a href="/0507" class="animsition-link">7</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0508" class="animsition-link">8</a></td>
-					<td><a href="/0509" class="animsition-link">9</a></td>
-					<td><a href="/0510" class="animsition-link">10</a></td>
-					<td><a href="/0511" class="animsition-link">11</a></td>
-					<td><a href="/0512" class="animsition-link">12</a></td>
-					<td><a href="/0513" class="animsition-link">13</a></td>
-					<td><a href="/0514" class="animsition-link">14</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0515" class="animsition-link">15</a></td>
-					<td><a href="/0516" class="animsition-link">16</a></td>
-					<td><a href="/0517" class="animsition-link">17</a></td>
-					<td><a href="/0518" class="animsition-link">18</a></td>
-					<td><a href="/0519" class="animsition-link">19</a></td>
-					<td><a href="/0520" class="animsition-link">20</a></td>
-					<td><a href="/0521" class="animsition-link">21</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0522" class="animsition-link">22</a></td>
-					<td><a href="/0523" class="animsition-link">23</a></td>
-					<td><a href="/0524" class="animsition-link">24</a></td>
-					<td><a href="/0525" class="animsition-link">25</a></td>
-					<td><a href="/0526" class="animsition-link">26</a></td>
-					<td><a href="/0527" class="animsition-link">27</a></td>
-					<td><a href="/0528" class="animsition-link">28</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0529" class="animsition-link">29</a></td>
-					<td><a href="/0530" class="animsition-link">30</a></td>
-					<td><a href="/0531" class="animsition-link">31</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="june" class="cal">
-			<caption>June</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="3"> </td>
-					<td><a href="/0601" class="animsition-link">1</a></td>
-					<td><a href="/0602" class="animsition-link">2</a></td>
-					<td><a href="/0603" class="animsition-link">3</a></td>
-					<td><a href="/0604" class="animsition-link">4</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0605" class="animsition-link">5</a></td>
-					<td><a href="/0606" class="animsition-link">6</a></td>
-					<td><a href="/0607" class="animsition-link">7</a></td>
-					<td><a href="/0608" class="animsition-link">8</a></td>
-					<td><a href="/0609" class="animsition-link">9</a></td>
-					<td><a href="/0610" class="animsition-link">10</a></td>
-					<td><a href="/0611" class="animsition-link">11</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0612" class="animsition-link">12</a></td>
-					<td><a href="/0613" class="animsition-link">13</a></td>
-					<td><a href="/0614" class="animsition-link">14</a></td>
-					<td><a href="/0615" class="animsition-link">15</a></td>
-					<td><a href="/0616" class="animsition-link">16</a></td>
-					<td><a href="/0617" class="animsition-link">17</a></td>
-					<td><a href="/0618" class="animsition-link">18</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0619" class="animsition-link">19</a></td>
-					<td><a href="/0620" class="animsition-link">20</a></td>
-					<td><a href="/0621" class="animsition-link">21</a></td>
-					<td><a href="/0622" class="animsition-link">22</a></td>
-					<td><a href="/0623" class="animsition-link">23</a></td>
-					<td><a href="/0624" class="animsition-link">24</a></td>
-					<td><a href="/0625" class="animsition-link">25</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0626" class="animsition-link">26</a></td>
-					<td><a href="/0627" class="animsition-link">27</a></td>
-					<td><a href="/0628" class="animsition-link">28</a></td>
-					<td><a href="/0629" class="animsition-link">29</a></td>
-					<td><a href="/0630" class="animsition-link">30</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="july" class="cal">
-			<caption>July</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="5"> </td>
-					<td><a href="/0701" class="animsition-link">1</a></td>
-					<td><a href="/0702" class="animsition-link">2</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0703" class="animsition-link">3</a></td>
-					<td><a href="/0704" class="animsition-link">4</a></td>
-					<td><a href="/0705" class="animsition-link">5</a></td>
-					<td><a href="/0706" class="animsition-link">6</a></td>
-					<td><a href="/0707" class="animsition-link">7</a></td>
-					<td><a href="/0708" class="animsition-link">8</a></td>
-					<td><a href="/0709" class="animsition-link">9</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0710" class="animsition-link">10</a></td>
-					<td><a href="/0711" class="animsition-link">11</a></td>
-					<td><a href="/0712" class="animsition-link">12</a></td>
-					<td><a href="/0713" class="animsition-link">13</a></td>
-					<td><a href="/0714" class="animsition-link">14</a></td>
-					<td><a href="/0715" class="animsition-link">15</a></td>
-					<td><a href="/0716" class="animsition-link">16</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0717" class="animsition-link">17</a></td>
-					<td><a href="/0718" class="animsition-link">18</a></td>
-					<td><a href="/0719" class="animsition-link">19</a></td>
-					<td><a href="/0720" class="animsition-link">20</a></td>
-					<td><a href="/0721" class="animsition-link">21</a></td>
-					<td><a href="/0722" class="animsition-link">22</a></td>
-					<td><a href="/0723" class="animsition-link">23</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0724" class="animsition-link">24</a></td>
-					<td><a href="/0725" class="animsition-link">25</a></td>
-					<td><a href="/0726" class="animsition-link">26</a></td>
-					<td><a href="/0727" class="animsition-link">27</a></td>
-					<td><a href="/0728" class="animsition-link">28</a></td>
-					<td><a href="/0729" class="animsition-link">29</a></td>
-					<td><a href="/0730" class="animsition-link">30</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0730" class="animsition-link">30</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="august" class="cal">
-			<caption>August</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="1"></td>
-					<td><a href="/0801" class="animsition-link">1</a></td>
-					<td><a href="/0802" class="animsition-link">2</a></td>
-					<td><a href="/0803" class="animsition-link">3</a></td>
-					<td><a href="/0804" class="animsition-link">4</a></td>
-					<td><a href="/0805" class="animsition-link">5</a></td>
-					<td><a href="/0806" class="animsition-link">6</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0807" class="animsition-link">7</a></td>
-					<td><a href="/0808" class="animsition-link">8</a></td>
-					<td><a href="/0809" class="animsition-link">9</a></td>
-					<td><a href="/0810" class="animsition-link">10</a></td>
-					<td><a href="/0811" class="animsition-link">11</a></td>
-					<td><a href="/0812" class="animsition-link">12</a></td>
-					<td><a href="/0813" class="animsition-link">13</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0814" class="animsition-link">14</a></td>
-					<td><a href="/0815" class="animsition-link">15</a></td>
-					<td><a href="/0816" class="animsition-link">16</a></td>
-					<td><a href="/0817" class="animsition-link">17</a></td>
-					<td><a href="/0818" class="animsition-link">18</a></td>
-					<td><a href="/0819" class="animsition-link">19</a></td>
-					<td><a href="/0820" class="animsition-link">20</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0821" class="animsition-link">21</a></td>
-					<td><a href="/0822" class="animsition-link">22</a></td>
-					<td><a href="/0823" class="animsition-link">23</a></td>
-					<td><a href="/0824" class="animsition-link">24</a></td>
-					<td><a href="/0825" class="animsition-link">25</a></td>
-					<td><a href="/0826" class="animsition-link">26</a></td>
-					<td><a href="/0827" class="animsition-link">27</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0828" class="animsition-link">28</a></td>
-					<td><a href="/0829" class="animsition-link">29</a></td>
-					<td><a href="/0830" class="animsition-link">30</a></td>
-					<td><a href="/0831" class="animsition-link">31</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="september" class="cal">
-			<caption>September</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="4"></td>
-					<td><a href="/0901" class="animsition-link">1</a></td>
-					<td><a href="/0902" class="animsition-link">2</a></td>
-					<td><a href="/0903" class="animsition-link">3</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0904" class="animsition-link">4</a></td>
-					<td><a href="/0905" class="animsition-link">5</a></td>
-					<td><a href="/0906" class="animsition-link">6</a></td>
-					<td><a href="/0907" class="animsition-link">7</a></td>
-					<td><a href="/0908" class="animsition-link">8</a></td>
-					<td><a href="/0909" class="animsition-link">9</a></td>
-					<td><a href="/0910" class="animsition-link">10</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0911" class="animsition-link">11</a></td>
-					<td><a href="/0912" class="animsition-link">12</a></td>
-					<td><a href="/0913" class="animsition-link">13</a></td>
-					<td><a href="/0914" class="animsition-link">14</a></td>
-					<td><a href="/0915" class="animsition-link">15</a></td>
-					<td><a href="/0916" class="animsition-link">16</a></td>
-					<td><a href="/0917" class="animsition-link">17</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0918" class="animsition-link">18</a></td>
-					<td><a href="/0919" class="animsition-link">19</a></td>
-					<td><a href="/0920" class="animsition-link">20</a></td>
-					<td><a href="/0921" class="animsition-link">21</a></td>
-					<td><a href="/0922" class="animsition-link">22</a></td>
-					<td><a href="/0923" class="animsition-link">23</a></td>
-					<td><a href="/0924" class="animsition-link">24</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0925" class="animsition-link">25</a></td>
-					<td><a href="/0926" class="animsition-link">26</a></td>
-					<td><a href="/0927" class="animsition-link">27</a></td>
-					<td><a href="/0928" class="animsition-link">28</a></td>
-					<td><a href="/0929" class="animsition-link">29</a></td>
-					<td><a href="/0930" class="animsition-link">30</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="october" class="cal">
-			<caption>October</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="6"></td>
-					<td><a href="/1001" class="animsition-link">1</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1002" class="animsition-link">2</a></td>
-					<td><a href="/1003" class="animsition-link">3</a></td>
-					<td><a href="/1004" class="animsition-link">4</a></td>
-					<td><a href="/1005" class="animsition-link">5</a></td>
-					<td><a href="/1006" class="animsition-link">6</a></td>
-					<td><a href="/1007" class="animsition-link">7</a></td>
-					<td><a href="/1008" class="animsition-link">8</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1009" class="animsition-link">9</a></td>
-					<td><a href="/1010" class="animsition-link">10</a></td>
-					<td><a href="/1011" class="animsition-link">11</a></td>
-					<td><a href="/1012" class="animsition-link">12</a></td>
-					<td><a href="/1013" class="animsition-link">13</a></td>
-					<td><a href="/1014" class="animsition-link">14</a></td>
-					<td><a href="/1015" class="animsition-link">15</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1016" class="animsition-link">16</a></td>
-					<td><a href="/1017" class="animsition-link">17</a></td>
-					<td><a href="/1018" class="animsition-link">18</a></td>
-					<td><a href="/1019" class="animsition-link">19</a></td>
-					<td><a href="/1020" class="animsition-link">20</a></td>
-					<td><a href="/1021" class="animsition-link">21</a></td>
-					<td><a href="/1022" class="animsition-link">22</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1023" class="animsition-link">23</a></td>
-					<td><a href="/1024" class="animsition-link">24</a></td>
-					<td><a href="/1025" class="animsition-link">25</a></td>
-					<td><a href="/1026" class="animsition-link">26</a></td>
-					<td><a href="/1027" class="animsition-link">27</a></td>
-					<td><a href="/1028" class="animsition-link">28</a></td>
-					<td><a href="/1029" class="animsition-link">29</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1030" class="animsition-link">30</a></td>
-					<td><a href="/1031" class="animsition-link">31</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="november" class="cal">
-			<caption>November</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="2"></td>
-					<td><a href="/1101" class="animsition-link">1</a></td>
-					<td><a href="/1102" class="animsition-link">2</a></td>
-					<td><a href="/1103" class="animsition-link">3</a></td>
-					<td><a href="/1104" class="animsition-link">4</a></td>
-					<td><a href="/1105" class="animsition-link">5</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1106" class="animsition-link">6</a></td>
-					<td><a href="/1107" class="animsition-link">7</a></td>
-					<td><a href="/1108" class="animsition-link">8</a></td>
-					<td><a href="/1109" class="animsition-link">9</a></td>
-					<td><a href="/1110" class="animsition-link">10</a></td>
-					<td><a href="/1111" class="animsition-link">11</a></td>
-					<td><a href="/1112" class="animsition-link">12</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1113" class="animsition-link">13</a></td>
-					<td><a href="/1114" class="animsition-link">14</a></td>
-					<td><a href="/1115" class="animsition-link">15</a></td>
-					<td><a href="/1116" class="animsition-link">16</a></td>
-					<td><a href="/1117" class="animsition-link">17</a></td>
-					<td><a href="/1118" class="animsition-link">18</a></td>
-					<td><a href="/1119" class="animsition-link">19</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1120" class="animsition-link">20</a></td>
-					<td><a href="/1121" class="animsition-link">21</a></td>
-					<td><a href="/1122" class="animsition-link">22</a></td>
-					<td><a href="/1123" class="animsition-link">23</a></td>
-					<td><a href="/1124" class="animsition-link">24</a></td>
-					<td><a href="/1125" class="animsition-link">25</a></td>
-					<td><a href="/1126" class="animsition-link">26</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1127" class="animsition-link">27</a></td>
-					<td><a href="/1128" class="animsition-link">28</a></td>
-					<td><a href="/1129" class="animsition-link">29</a></td>
-					<td><a href="/1130" class="animsition-link">30</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="december" class="cal">
-			<caption>December</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="4"></td>
-					<td><a href="/1201" class="animsition-link">1</a></td>
-					<td><a href="/1202" class="animsition-link">2</a></td>
-					<td><a href="/1203" class="animsition-link">3</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1204" class="animsition-link">4</a></td>
-					<td><a href="/1205" class="animsition-link">5</a></td>
-					<td><a href="/1206" class="animsition-link">6</a></td>
-					<td><a href="/1207" class="animsition-link">7</a></td>
-					<td><a href="/1208" class="animsition-link">8</a></td>
-					<td><a href="/1209" class="animsition-link">9</a></td>
-					<td><a href="/1210" class="animsition-link">10</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1211" class="animsition-link">11</a></td>
-					<td><a href="/1212" class="animsition-link">12</a></td>
-					<td><a href="/1213" class="animsition-link">13</a></td>
-					<td><a href="/1214" class="animsition-link">14</a></td>
-					<td><a href="/1215" class="animsition-link">15</a></td>
-					<td><a href="/1216" class="animsition-link">16</a></td>
-					<td><a href="/1217" class="animsition-link">17</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1218" class="animsition-link">18</a></td>
-					<td><a href="/1219" class="animsition-link">19</a></td>
-					<td><a href="/1220" class="animsition-link">20</a></td>
-					<td><a href="/1221" class="animsition-link">21</a></td>
-					<td><a href="/1222" class="animsition-link">22</a></td>
-					<td><a href="/1223" class="animsition-link">23</a></td>
-					<td><a href="/1224" class="animsition-link">24</a></td>
-				</tr>
-				<tr>
-					<td><a href="/1225" class="animsition-link">25</a></td>
-					<td><a href="/1226" class="animsition-link">26</a></td>
-					<td><a href="/1227" class="animsition-link">27</a></td>
-					<td><a href="/1228" class="animsition-link">28</a></td>
-					<td><a href="/1229" class="animsition-link">29</a></td>
-					<td><a href="/1230" class="animsition-link">30</a></td>
-					<td><a href="/1231" class="animsition-link">31</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="january" class="cal">
-			<caption>January</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td><a href="/0101" class="animsition-link">1</a></td>
-					<td><a href="/0102" class="animsition-link">2</a></td>
-					<td><a href="/0103" class="animsition-link">3</a></td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-				</tr>
-				<tr>
-					<td>8</td>
-					<td><a href="/0109" class="animsition-link">9</a></td>
-					<td><a href="/0110" class="animsition-link">10</a></td>
-					<td><a href="/0111" class="animsition-link">11</a></td>
-					<td><a href="/0112" class="animsition-link">12</a></td>
-					<td><a href="/0113" class="animsition-link">13</a></td>
-					<td><a href="/0114" class="animsition-link">14</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0115" class="animsition-link">15</a></td>
-					<td><a href="/0116" class="animsition-link">16</a></td>
-					<td><a href="/0117" class="animsition-link">17</a></td>
-					<td><a href="/0118" class="animsition-link">18</a></td>
-					<td><a href="/0119" class="animsition-link">19</a></td>
-					<td><a href="/0120" class="animsition-link">20</a></td>
-					<td><a href="/0121" class="animsition-link">21</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0122" class="animsition-link">22</a></td>
-					<td><a href="/0123" class="animsition-link">23</a></td>
-					<td><a href="/0124" class="animsition-link">24</a></td>
-					<td><a href="/0125" class="animsition-link">25</a></td>
-					<td><a href="/0126" class="animsition-link">26</a></td>
-					<td>27</td>
-					<td>28</td>
-				</tr>
-				<tr>
-					<td>29</td>
-					<td>30</td>
-					<td><a href="/0131" class="animsition-link">31</a></td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="february" class="cal">
-			<caption>February</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="3"></td>
-					<td><a href="/0201" class="animsition-link">1</a></td>
-					<td><a href="/0202" class="animsition-link">2</a></td>
-					<td><a href="/0203" class="animsition-link">3</a></td>
-					<td><a href="/0204" class="animsition-link">4</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0205" class="animsition-link">5</a></td>
-					<td><a href="/0206" class="animsition-link">6</a></td>
-					<td><a href="/0207" class="animsition-link">7</a></td>
-					<td><a href="/0208" class="animsition-link">8</a></td>
-					<td><a href="/0209" class="animsition-link">9</a></td>
-					<td><a href="/0210" class="animsition-link">10</a></td>
-					<td><a href="/0211" class="animsition-link">11</a></td>
-				</tr>
-				<tr>
-					<td><a href="/0212" class="animsition-link">12</a></td>
-					<td><a href="/0213" class="animsition-link">13</a></td>
-					<td><a href="/0214" class="animsition-link">14</a></td>
-					<td><a href="/0215" class="animsition-link">15</a></td>
-					<td>16</td>
-					<td>17</td>
-					<td>18</td>
-				</tr>
-				<tr>
-					<td>19</td>
-					<td>20</td>
-					<td>21</td>
-					<td>22</td>
-					<td>23</td>
-					<td>24</td>
-					<td>25</td>
-				</tr>
-				<tr>
-					<td>26</td>
-					<td>27</td>
-					<td>28</td>
-					<td>29</td>
-				</tr>
-			</tbody>
-		</table>
-		<table id="march" class="cal">
-			<caption>March</caption>
-			<thead>
-				<th>Su</th>
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>Th</th>
-				<th>F</th>
-				<th>S</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="4"></td>
-					<td>1</td>
-					<td>2</td>
-					<td>3</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
-					<td>10</td>
-				</tr>
-				<tr>
-					<td>11</td>
-					<td>12</td>
-					<td>13</td>
-					<td>14</td>
-					<td>15</td>
-					<td>16</td>
-					<td>17</td>
-				</tr>
-				<tr>
-					<td>18</td>
-					<td>19</td>
-					<td><a href="/0320" class="animsition-link">20</a></td>
-					<td>21</td>
-					<td>22</td>
-					<td>23</td>
-					<td>24</td>
-				</tr>
-				<tr>
-					<td>25</td>
-					<td>26</td>
-					<td>27</td>
-					<td>28</td>
-					<td>29</td>
-					<td>30</td>
-					<td>31</td>
-				</tr>
-			</tbody>
-		</table>
-<!--div #calendar ended in calfooter.html-->
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan=5> </td>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><a href="/days/0411" class="animsition-link">11</a></td>
+				<td><a href="/days/0412" class="animsition-link">12</a></td>
+				<td><a href="/days/0413" class="animsition-link">13</a></td>
+				<td><a href="/days/0414" class="animsition-link">14</a></td>
+				<td><a href="/days/0415" class="animsition-link">15</a></td>
+				<td><a href="/days/0416" class="animsition-link">16</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0417" class="animsition-link">17</a></td>
+				<td><a href="/days/0418" class="animsition-link">18</a></td>
+				<td><a href="/days/0419" class="animsition-link">19</a></td>
+				<td><a href="/days/0420" class="animsition-link">20</a></td>
+				<td><a href="/days/0421" class="animsition-link">21</a></td>
+				<td><a href="/days/0422" class="animsition-link">22</a></td>
+				<td><a href="/days/0423" class="animsition-link">23</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0424" class="animsition-link">24</a></td>
+				<td><a href="/days/0425" class="animsition-link">25</a></td>
+				<td><a href="/days/0426" class="animsition-link">26</a></td>
+				<td><a href="/days/0427" class="animsition-link">27</a></td>
+				<td><a href="/days/0428" class="animsition-link">28</a></td>
+				<td><a href="/days/0429" class="animsition-link">29</a></td>
+				<td><a href="/days/0430" class="animsition-link">30</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="may" class="cal">
+		<caption>May</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="/days/0501" class="animsition-link">1</a></td>
+				<td><a href="/days/0502" class="animsition-link">2</a></td>
+				<td><a href="/days/0503" class="animsition-link">3</a></td>
+				<td><a href="/days/0504" class="animsition-link">4</a></td>
+				<td><a href="/days/0505" class="animsition-link">5</a></td>
+				<td><a href="/days/0506" class="animsition-link">6</a></td>
+				<td><a href="/days/0507" class="animsition-link">7</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0508" class="animsition-link">8</a></td>
+				<td><a href="/days/0509" class="animsition-link">9</a></td>
+				<td><a href="/days/0510" class="animsition-link">10</a></td>
+				<td><a href="/days/0511" class="animsition-link">11</a></td>
+				<td><a href="/days/0512" class="animsition-link">12</a></td>
+				<td><a href="/days/0513" class="animsition-link">13</a></td>
+				<td><a href="/days/0514" class="animsition-link">14</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0515" class="animsition-link">15</a></td>
+				<td><a href="/days/0516" class="animsition-link">16</a></td>
+				<td><a href="/days/0517" class="animsition-link">17</a></td>
+				<td><a href="/days/0518" class="animsition-link">18</a></td>
+				<td><a href="/days/0519" class="animsition-link">19</a></td>
+				<td><a href="/days/0520" class="animsition-link">20</a></td>
+				<td><a href="/days/0521" class="animsition-link">21</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0522" class="animsition-link">22</a></td>
+				<td><a href="/days/0523" class="animsition-link">23</a></td>
+				<td><a href="/days/0524" class="animsition-link">24</a></td>
+				<td><a href="/days/0525" class="animsition-link">25</a></td>
+				<td><a href="/days/0526" class="animsition-link">26</a></td>
+				<td><a href="/days/0527" class="animsition-link">27</a></td>
+				<td><a href="/days/0528" class="animsition-link">28</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0529" class="animsition-link">29</a></td>
+				<td><a href="/days/0530" class="animsition-link">30</a></td>
+				<td><a href="/days/0531" class="animsition-link">31</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="june" class="cal">
+		<caption>June</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="3"> </td>
+				<td><a href="/days/0601" class="animsition-link">1</a></td>
+				<td><a href="/days/0602" class="animsition-link">2</a></td>
+				<td><a href="/days/0603" class="animsition-link">3</a></td>
+				<td><a href="/days/0604" class="animsition-link">4</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0605" class="animsition-link">5</a></td>
+				<td><a href="/days/0606" class="animsition-link">6</a></td>
+				<td><a href="/days/0607" class="animsition-link">7</a></td>
+				<td><a href="/days/0608" class="animsition-link">8</a></td>
+				<td><a href="/days/0609" class="animsition-link">9</a></td>
+				<td><a href="/days/0610" class="animsition-link">10</a></td>
+				<td><a href="/days/0611" class="animsition-link">11</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0612" class="animsition-link">12</a></td>
+				<td><a href="/days/0613" class="animsition-link">13</a></td>
+				<td><a href="/days/0614" class="animsition-link">14</a></td>
+				<td><a href="/days/0615" class="animsition-link">15</a></td>
+				<td><a href="/days/0616" class="animsition-link">16</a></td>
+				<td><a href="/days/0617" class="animsition-link">17</a></td>
+				<td><a href="/days/0618" class="animsition-link">18</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0619" class="animsition-link">19</a></td>
+				<td><a href="/days/0620" class="animsition-link">20</a></td>
+				<td><a href="/days/0621" class="animsition-link">21</a></td>
+				<td><a href="/days/0622" class="animsition-link">22</a></td>
+				<td><a href="/days/0623" class="animsition-link">23</a></td>
+				<td><a href="/days/0624" class="animsition-link">24</a></td>
+				<td><a href="/days/0625" class="animsition-link">25</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0626" class="animsition-link">26</a></td>
+				<td><a href="/days/0627" class="animsition-link">27</a></td>
+				<td><a href="/days/0628" class="animsition-link">28</a></td>
+				<td><a href="/days/0629" class="animsition-link">29</a></td>
+				<td><a href="/days/0630" class="animsition-link">30</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="july" class="cal">
+		<caption>July</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="5"> </td>
+				<td><a href="/days/0701" class="animsition-link">1</a></td>
+				<td><a href="/days/0702" class="animsition-link">2</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0703" class="animsition-link">3</a></td>
+				<td><a href="/days/0704" class="animsition-link">4</a></td>
+				<td><a href="/days/0705" class="animsition-link">5</a></td>
+				<td><a href="/days/0706" class="animsition-link">6</a></td>
+				<td><a href="/days/0707" class="animsition-link">7</a></td>
+				<td><a href="/days/0708" class="animsition-link">8</a></td>
+				<td><a href="/days/0709" class="animsition-link">9</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0710" class="animsition-link">10</a></td>
+				<td><a href="/days/0711" class="animsition-link">11</a></td>
+				<td><a href="/days/0712" class="animsition-link">12</a></td>
+				<td><a href="/days/0713" class="animsition-link">13</a></td>
+				<td><a href="/days/0714" class="animsition-link">14</a></td>
+				<td><a href="/days/0715" class="animsition-link">15</a></td>
+				<td><a href="/days/0716" class="animsition-link">16</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0717" class="animsition-link">17</a></td>
+				<td><a href="/days/0718" class="animsition-link">18</a></td>
+				<td><a href="/days/0719" class="animsition-link">19</a></td>
+				<td><a href="/days/0720" class="animsition-link">20</a></td>
+				<td><a href="/days/0721" class="animsition-link">21</a></td>
+				<td><a href="/days/0722" class="animsition-link">22</a></td>
+				<td><a href="/days/0723" class="animsition-link">23</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0724" class="animsition-link">24</a></td>
+				<td><a href="/days/0725" class="animsition-link">25</a></td>
+				<td><a href="/days/0726" class="animsition-link">26</a></td>
+				<td><a href="/days/0727" class="animsition-link">27</a></td>
+				<td><a href="/days/0728" class="animsition-link">28</a></td>
+				<td><a href="/days/0729" class="animsition-link">29</a></td>
+				<td><a href="/days/0730" class="animsition-link">30</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0730" class="animsition-link">30</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="august" class="cal">
+		<caption>August</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="1"></td>
+				<td><a href="/days/0801" class="animsition-link">1</a></td>
+				<td><a href="/days/0802" class="animsition-link">2</a></td>
+				<td><a href="/days/0803" class="animsition-link">3</a></td>
+				<td><a href="/days/0804" class="animsition-link">4</a></td>
+				<td><a href="/days/0805" class="animsition-link">5</a></td>
+				<td><a href="/days/0806" class="animsition-link">6</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0807" class="animsition-link">7</a></td>
+				<td><a href="/days/0808" class="animsition-link">8</a></td>
+				<td><a href="/days/0809" class="animsition-link">9</a></td>
+				<td><a href="/days/0810" class="animsition-link">10</a></td>
+				<td><a href="/days/0811" class="animsition-link">11</a></td>
+				<td><a href="/days/0812" class="animsition-link">12</a></td>
+				<td><a href="/days/0813" class="animsition-link">13</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0814" class="animsition-link">14</a></td>
+				<td><a href="/days/0815" class="animsition-link">15</a></td>
+				<td><a href="/days/0816" class="animsition-link">16</a></td>
+				<td><a href="/days/0817" class="animsition-link">17</a></td>
+				<td><a href="/days/0818" class="animsition-link">18</a></td>
+				<td><a href="/days/0819" class="animsition-link">19</a></td>
+				<td><a href="/days/0820" class="animsition-link">20</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0821" class="animsition-link">21</a></td>
+				<td><a href="/days/0822" class="animsition-link">22</a></td>
+				<td><a href="/days/0823" class="animsition-link">23</a></td>
+				<td><a href="/days/0824" class="animsition-link">24</a></td>
+				<td><a href="/days/0825" class="animsition-link">25</a></td>
+				<td><a href="/days/0826" class="animsition-link">26</a></td>
+				<td><a href="/days/0827" class="animsition-link">27</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0828" class="animsition-link">28</a></td>
+				<td><a href="/days/0829" class="animsition-link">29</a></td>
+				<td><a href="/days/0830" class="animsition-link">30</a></td>
+				<td><a href="/days/0831" class="animsition-link">31</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="september" class="cal">
+		<caption>September</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="4"></td>
+				<td><a href="/days/0901" class="animsition-link">1</a></td>
+				<td><a href="/days/0902" class="animsition-link">2</a></td>
+				<td><a href="/days/0903" class="animsition-link">3</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0904" class="animsition-link">4</a></td>
+				<td><a href="/days/0905" class="animsition-link">5</a></td>
+				<td><a href="/days/0906" class="animsition-link">6</a></td>
+				<td><a href="/days/0907" class="animsition-link">7</a></td>
+				<td><a href="/days/0908" class="animsition-link">8</a></td>
+				<td><a href="/days/0909" class="animsition-link">9</a></td>
+				<td><a href="/days/0910" class="animsition-link">10</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0911" class="animsition-link">11</a></td>
+				<td><a href="/days/0912" class="animsition-link">12</a></td>
+				<td><a href="/days/0913" class="animsition-link">13</a></td>
+				<td><a href="/days/0914" class="animsition-link">14</a></td>
+				<td><a href="/days/0915" class="animsition-link">15</a></td>
+				<td><a href="/days/0916" class="animsition-link">16</a></td>
+				<td><a href="/days/0917" class="animsition-link">17</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0918" class="animsition-link">18</a></td>
+				<td><a href="/days/0919" class="animsition-link">19</a></td>
+				<td><a href="/days/0920" class="animsition-link">20</a></td>
+				<td><a href="/days/0921" class="animsition-link">21</a></td>
+				<td><a href="/days/0922" class="animsition-link">22</a></td>
+				<td><a href="/days/0923" class="animsition-link">23</a></td>
+				<td><a href="/days/0924" class="animsition-link">24</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0925" class="animsition-link">25</a></td>
+				<td><a href="/days/0926" class="animsition-link">26</a></td>
+				<td><a href="/days/0927" class="animsition-link">27</a></td>
+				<td><a href="/days/0928" class="animsition-link">28</a></td>
+				<td><a href="/days/0929" class="animsition-link">29</a></td>
+				<td><a href="/days/0930" class="animsition-link">30</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="october" class="cal">
+		<caption>October</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="6"></td>
+				<td><a href="/days/1001" class="animsition-link">1</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1002" class="animsition-link">2</a></td>
+				<td><a href="/days/1003" class="animsition-link">3</a></td>
+				<td><a href="/days/1004" class="animsition-link">4</a></td>
+				<td><a href="/days/1005" class="animsition-link">5</a></td>
+				<td><a href="/days/1006" class="animsition-link">6</a></td>
+				<td><a href="/days/1007" class="animsition-link">7</a></td>
+				<td><a href="/days/1008" class="animsition-link">8</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1009" class="animsition-link">9</a></td>
+				<td><a href="/days/1010" class="animsition-link">10</a></td>
+				<td><a href="/days/1011" class="animsition-link">11</a></td>
+				<td><a href="/days/1012" class="animsition-link">12</a></td>
+				<td><a href="/days/1013" class="animsition-link">13</a></td>
+				<td><a href="/days/1014" class="animsition-link">14</a></td>
+				<td><a href="/days/1015" class="animsition-link">15</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1016" class="animsition-link">16</a></td>
+				<td><a href="/days/1017" class="animsition-link">17</a></td>
+				<td><a href="/days/1018" class="animsition-link">18</a></td>
+				<td><a href="/days/1019" class="animsition-link">19</a></td>
+				<td><a href="/days/1020" class="animsition-link">20</a></td>
+				<td><a href="/days/1021" class="animsition-link">21</a></td>
+				<td><a href="/days/1022" class="animsition-link">22</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1023" class="animsition-link">23</a></td>
+				<td><a href="/days/1024" class="animsition-link">24</a></td>
+				<td><a href="/days/1025" class="animsition-link">25</a></td>
+				<td><a href="/days/1026" class="animsition-link">26</a></td>
+				<td><a href="/days/1027" class="animsition-link">27</a></td>
+				<td><a href="/days/1028" class="animsition-link">28</a></td>
+				<td><a href="/days/1029" class="animsition-link">29</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1030" class="animsition-link">30</a></td>
+				<td><a href="/days/1031" class="animsition-link">31</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="november" class="cal">
+		<caption>November</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="2"></td>
+				<td><a href="/days/1101" class="animsition-link">1</a></td>
+				<td><a href="/days/1102" class="animsition-link">2</a></td>
+				<td><a href="/days/1103" class="animsition-link">3</a></td>
+				<td><a href="/days/1104" class="animsition-link">4</a></td>
+				<td><a href="/days/1105" class="animsition-link">5</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1106" class="animsition-link">6</a></td>
+				<td><a href="/days/1107" class="animsition-link">7</a></td>
+				<td><a href="/days/1108" class="animsition-link">8</a></td>
+				<td><a href="/days/1109" class="animsition-link">9</a></td>
+				<td><a href="/days/1110" class="animsition-link">10</a></td>
+				<td><a href="/days/1111" class="animsition-link">11</a></td>
+				<td><a href="/days/1112" class="animsition-link">12</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1113" class="animsition-link">13</a></td>
+				<td><a href="/days/1114" class="animsition-link">14</a></td>
+				<td><a href="/days/1115" class="animsition-link">15</a></td>
+				<td><a href="/days/1116" class="animsition-link">16</a></td>
+				<td><a href="/days/1117" class="animsition-link">17</a></td>
+				<td><a href="/days/1118" class="animsition-link">18</a></td>
+				<td><a href="/days/1119" class="animsition-link">19</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1120" class="animsition-link">20</a></td>
+				<td><a href="/days/1121" class="animsition-link">21</a></td>
+				<td><a href="/days/1122" class="animsition-link">22</a></td>
+				<td><a href="/days/1123" class="animsition-link">23</a></td>
+				<td><a href="/days/1124" class="animsition-link">24</a></td>
+				<td><a href="/days/1125" class="animsition-link">25</a></td>
+				<td><a href="/days/1126" class="animsition-link">26</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1127" class="animsition-link">27</a></td>
+				<td><a href="/days/1128" class="animsition-link">28</a></td>
+				<td><a href="/days/1129" class="animsition-link">29</a></td>
+				<td><a href="/days/1130" class="animsition-link">30</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="december" class="cal">
+		<caption>December</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="4"></td>
+				<td><a href="/days/1201" class="animsition-link">1</a></td>
+				<td><a href="/days/1202" class="animsition-link">2</a></td>
+				<td><a href="/days/1203" class="animsition-link">3</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1204" class="animsition-link">4</a></td>
+				<td><a href="/days/1205" class="animsition-link">5</a></td>
+				<td><a href="/days/1206" class="animsition-link">6</a></td>
+				<td><a href="/days/1207" class="animsition-link">7</a></td>
+				<td><a href="/days/1208" class="animsition-link">8</a></td>
+				<td><a href="/days/1209" class="animsition-link">9</a></td>
+				<td><a href="/days/1210" class="animsition-link">10</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1211" class="animsition-link">11</a></td>
+				<td><a href="/days/1212" class="animsition-link">12</a></td>
+				<td><a href="/days/1213" class="animsition-link">13</a></td>
+				<td><a href="/days/1214" class="animsition-link">14</a></td>
+				<td><a href="/days/1215" class="animsition-link">15</a></td>
+				<td><a href="/days/1216" class="animsition-link">16</a></td>
+				<td><a href="/days/1217" class="animsition-link">17</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1218" class="animsition-link">18</a></td>
+				<td><a href="/days/1219" class="animsition-link">19</a></td>
+				<td><a href="/days/1220" class="animsition-link">20</a></td>
+				<td><a href="/days/1221" class="animsition-link">21</a></td>
+				<td><a href="/days/1222" class="animsition-link">22</a></td>
+				<td><a href="/days/1223" class="animsition-link">23</a></td>
+				<td><a href="/days/1224" class="animsition-link">24</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/1225" class="animsition-link">25</a></td>
+				<td><a href="/days/1226" class="animsition-link">26</a></td>
+				<td><a href="/days/1227" class="animsition-link">27</a></td>
+				<td><a href="/days/1228" class="animsition-link">28</a></td>
+				<td><a href="/days/1229" class="animsition-link">29</a></td>
+				<td><a href="/days/1230" class="animsition-link">30</a></td>
+				<td><a href="/days/1231" class="animsition-link">31</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="january" class="cal">
+		<caption>January</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="/days/0101" class="animsition-link">1</a></td>
+				<td><a href="/days/0102" class="animsition-link">2</a></td>
+				<td><a href="/days/0103" class="animsition-link">3</a></td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td><a href="/days/0109" class="animsition-link">9</a></td>
+				<td><a href="/days/0110" class="animsition-link">10</a></td>
+				<td><a href="/days/0111" class="animsition-link">11</a></td>
+				<td><a href="/days/0112" class="animsition-link">12</a></td>
+				<td><a href="/days/0113" class="animsition-link">13</a></td>
+				<td><a href="/days/0114" class="animsition-link">14</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0115" class="animsition-link">15</a></td>
+				<td><a href="/days/0116" class="animsition-link">16</a></td>
+				<td><a href="/days/0117" class="animsition-link">17</a></td>
+				<td><a href="/days/0118" class="animsition-link">18</a></td>
+				<td><a href="/days/0119" class="animsition-link">19</a></td>
+				<td><a href="/days/0120" class="animsition-link">20</a></td>
+				<td><a href="/days/0121" class="animsition-link">21</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0122" class="animsition-link">22</a></td>
+				<td><a href="/days/0123" class="animsition-link">23</a></td>
+				<td><a href="/days/0124" class="animsition-link">24</a></td>
+				<td><a href="/days/0125" class="animsition-link">25</a></td>
+				<td><a href="/days/0126" class="animsition-link">26</a></td>
+				<td>27</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<td>29</td>
+				<td>30</td>
+				<td><a href="/days/0131" class="animsition-link">31</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="february" class="cal">
+		<caption>February</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="3"></td>
+				<td><a href="/days/0201" class="animsition-link">1</a></td>
+				<td><a href="/days/0202" class="animsition-link">2</a></td>
+				<td><a href="/days/0203" class="animsition-link">3</a></td>
+				<td><a href="/days/0204" class="animsition-link">4</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0205" class="animsition-link">5</a></td>
+				<td><a href="/days/0206" class="animsition-link">6</a></td>
+				<td><a href="/days/0207" class="animsition-link">7</a></td>
+				<td><a href="/days/0208" class="animsition-link">8</a></td>
+				<td><a href="/days/0209" class="animsition-link">9</a></td>
+				<td><a href="/days/0210" class="animsition-link">10</a></td>
+				<td><a href="/days/0211" class="animsition-link">11</a></td>
+			</tr>
+			<tr>
+				<td><a href="/days/0212" class="animsition-link">12</a></td>
+				<td><a href="/days/0213" class="animsition-link">13</a></td>
+				<td><a href="/days/0214" class="animsition-link">14</a></td>
+				<td><a href="/days/0215" class="animsition-link">15</a></td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="march" class="cal">
+		<caption>March</caption>
+		<thead>
+			<th>Su</th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>Th</th>
+			<th>F</th>
+			<th>S</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="4"></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+			</tr>
+			<tr>
+				<td>18</td>
+				<td>19</td>
+				<td><a href="/days/0320" class="animsition-link">20</a></td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td>31</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+{% endblock %}
+
+{% block script %}{% endblock %}

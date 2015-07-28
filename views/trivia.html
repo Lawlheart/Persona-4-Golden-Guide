@@ -1,6 +1,17 @@
 
-<div class="grid radial">
-    <div id="quiz" class="centered grid__col--8">
+{% extends 'layout.html' %}
 
-    </div>
-	<script src="http://persona.lawlietblack.com/js/quiz.js"></script>
+{% block title %}Trivia{% endblock %}
+
+{% block content %}
+
+<div class="grid radial">
+  <div id="quiz" class="centered grid__col--8">
+
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="js/quiz.js"></script>
+{% endblock %}
