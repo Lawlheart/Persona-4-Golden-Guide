@@ -1,83 +1,67 @@
 
-{% extends 'layout.html' %}
-{% block title %}{{arcana}} Arcana{% endblock %}
-{% block head %}
 	<style>
-		#arcana {
+		#arcana.loaded {
 			color:#fff;
-			background: linear-gradient(90deg, black, rgba(0,0,0,0.5), black) center center fixed, linear-gradient(rgba(19, 19, 128,0.5), rgba(19, 19, 128,0.5)), url('http://lawlietblack.com/img/cards/{{img}}-card.png') no-repeat center center fixed;
+			background: linear-gradient(90deg, black, rgba(0,0,0,0.5), black) center center fixed, linear-gradient(rgba(19, 19, 128,0.5), rgba(19, 19, 128,0.5)), url('http://lawlietblack.com/img/cards/{{arcana.img}}-card.png') no-repeat center center fixed;
 			background-size: cover;
 		}
 		.btn {
 			background-color: rgba(19, 19, 88,1);
 		}
 	</style>
-{% endblock %}
 
-
-{% block nav %}
-		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../">Home</a></li>
-		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../calendar">Calendar</a></li>
-		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../slinks">Social Links</a></li>
-		<li class="right"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../trivia">Trivia</a></li>
-{% endblock %} 
-
-{% block content %}
 <div id="arcana">
-	<div class="arcana-header" ><img src="http://lawlietblack.com/img/{{img}}.png" class="portrait" alt=""><div class="title"><h1>{{arcana}} Arcana</h1><h2>{{name}}</h2></div>
+	<div class="arcana-header">
+		<img src="http://lawlietblack.com/img/{{arcana.img}}.png" class="portrait" alt="">
+		<div class="title">
+			<h1>{{arcana.arcana}} Arcana</h1>
+			<h2>{{arcana.name}}</h2>
+		</div>
 	</div>
 
-	<div class="notes">{{notes}}</div>
-	<h3 class="rank-title">Rank 1</h3>
+	<div class="notes">{{arcana.notes}}</div>
+	<h3 class="rank-title" ng-click="showRank(0)">Rank 1</h3>
 	<div class="dialog">
-		<h4>{{rank[0]}}</h4>
+		<h4>{{arcana.rank[0]}}</h4>
 	</div>
-	{% for level in rank %}
-		{% if level.rank !== "Rank 1" && level.rank !== undefined %}
-			<h3 class="rank-title">{{level.rank}}</h3>
-			<div class="dialog">
-				<h4>{{level.notes}}</h4>
-				{% for dialog in level.dialog %}
-					<h4>{{dialog.question}}</h4>
-					<ul class="answers">
-					{% for answers in dialog.answers%}
-						<li>
-							<span class='response'>{{answers[0]}}</span>
-							<span class='with'>{{answers[2]}}</span>
-							<span class='without'>{{answers[1]}}</span>
-						</li>
-					{% endfor %}
-					</ul>
-				{% endfor %}
-			</div>
-		{% endif %}
-	{% endfor %}
 
-	{% if freedays.length > 0 %}
-		<h3 class='dates-title'>Days Available</h3><ul class='dates'>
-		{% for day in freedays %}
-			<li>{{day}}</li>
-		{% endfor %}
-		</ul>
-	{% endif %}
-	
-	{% if tripdays.length > 0  %}
-		<h3 class='dates-title'>Bike Ride Days</h3><ul class='dates'>
-		{% for day in tripdays %}
-			<li>{{day}}</li>
-		{% endfor %}
-		</ul>
-	{% endif %}
+	<div ng-repeat="level in ranks">
+		<h3 class="rank-title" ng-click="showRank($index + 1)">{{level.rank}}</h3>
+		<div class="dialog">
+			<h4>{{level.notes}}</h4>
+			<div ng-repeat="dialog in level.dialog">
+				<h4>{{dialog.question}}</h4>
+				<ul class="answers">
+
+					<li ng-repeat="answers in dialog.answers">
+						<span class='response'>{{answers[0]}}</span>
+						<span class='with'>{{answers[2]}}</span>
+						<span class='without'>{{answers[1]}}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<h3 class='dates-title' ng-show="freedays.length > 0" ng-click="showDaysAvail()">Days Available</h3><ul class='dates days-avail'>
+		<li ng-repeat="day in freedays">{{day}}</li>
+	</ul>
+
+
+	<h3 class='dates-title' ng-show="tripdays.length > 0" ng-click="showTripDays()">Bike Ride Days</h3><ul class='dates trip-days'>
+		<li ng-repeat="day in tripdays">{{day}}</li>
+	</ul>
+
 
 </div>
-{% endblock %}
 
-{% block script %}
+
+
 	<script>
 		$('ul.dates, div.dialog').hide();
-			$('.dates-title, .rank-title').click(function(){
-				// Show spoilers
-				$(this).next().toggle();
-		});
+		// 	$('body').on('click', '.dates-title, .rank-title', function(){
+		// 		// Show spoilers
+		// 		console.log("test")
+		// 		$(this).next().toggle();
+		// });
 	</script>
-{% endblock %}

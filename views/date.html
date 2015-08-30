@@ -1,0 +1,43 @@
+
+	<div class="datecard" data-animsition-in= 'fade-in-right'
+		data-animsition-in-duration="1000">
+	<div class="date linetexture"><img src="#" ng-src="http://lawlietblack.com/img/weather-{{day.weather}}.png" alt=""><h1>{{day.weekDay}}, <span>{{day.date}}</span></h1></div>
+	</div>
+	<a 
+	href="#/days/{{prevDay}}" 
+	class="animsition-link" 
+	data-animsition-out="fade-out-right" 
+	data-animsition-out-duration="300">
+		<div class="arrow prev"></div>
+	</a>
+	<a href="#/days/{{nextDay}}" 
+		class="animsition-link" 
+		data-animsition-out="fade-out-left" 
+		data-animsition-out-duration="300">
+		<div class="arrow next"></div>
+	</a>
+	<div class="daycard radial">
+		<h1 class="title">After School | {{day.dayAvail}}</h1>
+		<p class="notes" ng-repeat="note in notes">{{note}}</p>
+
+			<p class="spoiler" ng-repeat="spoiler in day.spoilers">
+				<!--Spoiler:-->
+				<span style="display:none">{{spoiler.answer}}</span>
+				<button class="spoiler-reveal" ng-click="revealSpoiler($index)">{{spoiler.question}}</button>
+			</p>
+
+			<h2 class='slinks' ng-show="day.socialLinks.length > 0">Social Links Available</h2>
+			<ul class='slinks'>
+				<li ng-repeat="link in day.socialLinks"><a href="#/arcana/{{link}}"><img src="#" ng-src="/img/{{link}}.png" alt=""></a></li>
+			</ul>
+	</div>
+	<div class="nightcard radial">
+		<h1 class="title">Night | {{day.nightAvail}}</h1>
+		<p class="notes" ng-repeat="note in nightNotes">{{note}}</p>
+
+
+		<h2 class='slinks' ng-show="day.nightLinks.length > 0">Social Links Available</h2>
+			<ul class='slinks'>
+				<li ng-repeat="link in day.nightLinks"><a href="#/arcana/{{link}}"><img src="#" ng-src="/img/{{link}}.png" alt=""></a></li>
+			</ul>
+	</div>

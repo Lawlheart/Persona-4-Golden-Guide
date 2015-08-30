@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="personaApp">
+<head>
+	<meta charset="UTF-8">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' href='/css/normalize.css' >
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+	<script src="/js/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="/js/angularjs/angular.min.js" type="text/javascript"></script>
+	<script src="/js/angularjs/angular-route.min.js" type="text/javascript"></script>
+	<script src="/js/angularjs/angular-animate.js" type="text/javascript"></script>
+	<title>LawlietBlack | Persona 4 Golden</title>
+	
+</head>
+<body>
+<div>
+<nav>
+	<ul>
+		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="#/">Home</a></li>
+		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="#/calendar">Calendar</a></li>
+		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="#/slinks">Social Links</a></li>
+		<li class="right"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="#/trivia">Trivia</a></li>
+	</ul>
+</nav>
+<main>
+	<ng-view></ng-view>
+</main>
+<footer>
+	<p>Code and design &copy; Kenneth Black  2015. Images &copy; ATLUS</p>
+</footer>
+</div><!--close animsiton div-->
+ <script src="js/app.js"></script>
+
+</body>
+</html>

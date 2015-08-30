@@ -1,0 +1,533 @@
+/*General*/
+	body {
+		background-color: #101010;
+		font-family: 'Open Sans', sans-serif;
+	}
+	* ul {
+		list-style: none;
+	}
+	.glow {
+		text-shadow:
+  		-2px -2px 2px #fff,
+  		2px -2px 2px #fff,
+  		-2px 2px 2px #fff,
+  		2px 2px 2px #fff; 
+	}
+	.left {
+		float:left;
+	}
+	.right {
+		float:right;
+		padding-right:40px;
+	}
+/*Navigation Bar*/
+	nav { 
+		background:#101010;
+		padding:0;
+		margin:0;
+		height:40px;
+	}
+	nav ul {
+		margin:0;
+	}
+	nav li {
+		font-size:24px;
+		float:left;
+		font-weight:bold;
+	}
+	nav a {
+		color:#f88330;
+		text-decoration: none;
+	}
+	nav a:hover {
+		color:#C55000;
+		text-shadow:
+  		-2px -2px 8px #ee0,
+  		2px -2px 8px #ee0,
+  		-2px 2px 8px #ee0,
+  		2px 2px 8px #ee0; 
+	}
+	nav li+li {
+		margin-left:30px;
+	}
+/*Home Page*/
+	.jumbotron {
+	  background:url('http://lawlietblack.com/img/p4banner.jpg');
+	  width:100%;
+	  margin:0;
+	  height: 500px;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+	.jumbotron h1 {
+		color: #fff;
+		font-size:46px;
+		padding:10px 20px;
+  	margin-top:0px;
+  	text-shadow: 
+  		0 1px 1px #444,
+			0 2px 1px #333,
+			0 3px 1px #222,
+			0 4px 1px #111,
+			0 5px 1px #000,
+			10px 10px 20px rgba(231,171,8,0.9),
+			-10px 10px 20px rgba(231,171,8,0.9),
+			-10px -10px 20px rgba(231,171,8,0.9),
+			10px -10px 20px rgba(231,171,8,0.9),
+			10px 10px 20px rgba(231,171,8,0.9),
+			-10px 10px 20px rgba(231,171,8,0.9),
+			10px -10px 20px rgba(231,171,8,0.9),
+			10px 10px 20px rgba(231,171,8,0.9);
+  }
+  #home, #updates {
+  	width:100%;
+		margin:0 auto;
+		background-color: #FFBF00;
+		min-height: 200px;
+		padding-bottom:40px;
+  }
+  #home p {
+  	padding-bottom:40px;
+  }
+  #updates p {
+  	color:#101010;
+		padding:0;
+		margin:10px 20px;
+		text-shadow:0 2px 3px #555555;
+  }
+/*Social Links Page*/
+	#arcana div.tile {
+		width:500px;
+		float:left;
+		display:block;
+		margin:20px;
+		cursor:pointer;
+	}
+	#arcana div.tile div.title { 
+		/*85+120 = 205*/
+		width:300px;
+		font-size: .85rem;
+		margin-left:-10px;
+		margin-right:-10px;
+	}
+	#arcana div.tile img.card {
+		height:120px;
+		float:right;
+	}
+/*Calendar Page*/
+	#calendar, #quiz {
+		overflow: auto;
+		margin:auto;
+	}
+	#calendar h1, #quiz h1, #home h1, #updates h1 {
+		margin:0;
+		padding:10px 30px;
+		background-color: #e76508;
+		color: #fff;
+	}
+	.cal{
+		background-image: repeating-linear-gradient(45deg, rgba(231,101,8,.25), rgba(231,101,8,.25) 35px, rgba(231,101,8,.5) 35px, rgba(231,101,8,.5) 70px);
+		float:left;
+		overflow: auto;
+		width:30%;
+		min-width: 200px;
+		margin:20px 1.66%;
+		height:200px;
+		text-align:center;
+		
+	}
+	#calendar a {
+		text-decoration: none;
+		color:black;
+		font-weight: bold;
+		text-shadow:
+  		-1px -1px 0 #fff,
+  		1px -1px 0 #fff,
+  		-1px 1px 0 #fff,
+  		1px 1px 0 #fff;
+	}
+	#calendar caption {
+		font-size: 24px;
+		font-weight:bold;
+		color:#fff;
+	}
+	#calendar thead {
+		color:#fff;
+	}
+	#calendar thead, #calendar caption {
+		background-color:#e76508;
+	}
+/*Dates Pages*/	
+	.arrow {
+		width: 0; 
+		height: 0; 
+		border-top: 30px solid transparent;
+		border-bottom: 30px solid transparent;
+	}
+	.prev {
+		float:left;
+		border-right: 30px solid #0E2C85;
+	}
+	.next {
+		float:right;
+		border-left: 30px solid #0E2C85;
+	}
+	.daycard, .nightcard {
+		padding-bottom:40px;
+	}
+	.datecard, .daycard, .nightcard, #calendar, #error, .calcard {
+		width:100%;
+		margin:0 auto;
+	}
+	.daycard, #calendar, #error, #quiz {
+		background-color: #FFBF00;
+		min-height: 400px;
+	}
+	.nightcard {
+		background-color: #5F5FC6;
+		min-height: 400px;
+	}
+	.date{
+		background-image: url('http://lawlietblack.com/img/personabg.png');
+		background-size: cover;
+		background-repeat:no-repeat;
+		margin:0;
+		color:#070707;
+		height:100px;
+		text-shadow:
+  		-2px -2px 1px #fff,
+  		2px -2px 1px #fff,
+  		-2px 2px 1px #fff,
+  		2px 2px 1px #fff; 
+	}
+	.radial {
+		background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.05) 99%), radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.05) 99%);
+		background-size:80px 80px;
+		background-position:0 0, 40px 40px;
+	}
+	.date img {
+		display:inline;
+		height:100px;
+		width:100px;
+		margin:0;
+	}
+	.date h1, .home h1 {
+		display:inline-block;
+		vertical-align: text-bottom;
+		margin:0 10px 20px;
+		font-size:46px;
+	}
+	h1.title {
+		text-align: center;
+		margin:0;
+		padding:10px 40px;
+  	text-shadow:
+  		-2px -2px 1px #fff,
+  		2px -2px 1px #fff,
+  		-2px 2px 1px #fff,
+  		2px 2px 1px #fff;  
+	}
+	p.notes, #progress, #home p {
+		font-size:20px;
+	}
+	h2.slinks, p.notes, #progress, #question, #home p, #home h2, #updates h2 {
+		font-weight:bold;
+		color:#101010;
+		padding:0;
+		margin:10px 20px;
+		text-shadow:0 2px 3px #555555;
+	}
+	.slinks li {
+		list-style: none;
+		display: inline;
+	}
+	.slinks img {
+		border:3px solid #101010;
+		height:100px;
+		width: 100px;
+		border-radius: 15px;
+		margin:0 10px;
+	}
+	.daycard .title {
+		background-color: #e76508;
+	}
+	.nightcard .title {
+		background-color: #13138A;
+	}
+	.daycard .slinks img {
+		background: radial-gradient(transparent 60%, black) #e76508;
+	}
+	.nightcard .slinks img {
+		background: radial-gradient(transparent 60%, black) #13138A;
+	}
+	.daycard slinks img {
+		background: radial-gradient(transparent, black);
+	}
+	/*Spoiler Buttons*/
+	button, .spoiler {
+		height:100px;
+	}
+	button, .spoiler span {
+		color:white;
+		font-weight: bold;
+	}
+	button {
+	  background: #e76508;
+	  border: none;
+	  border-radius: 5px;
+	  width: 480px;
+	  padding: 20px;
+	  margin: -20px -20px;
+	  outline: none;
+	  cursor: pointer;
+	  font-size: 20px;
+	}
+	.spoiler {
+		background-color: #1d3c6a;
+	  width: 440px;
+	  height:60px;
+	  margin: 20px auto 0;
+	  border-radius: 5px;
+	  padding:20px;
+	  text-align: center;
+	  font-size: 20px;
+	}
+	.spoiler span {
+		margin-top:20px;
+		display:block;
+	}
+/*Error Page*/
+	.btn {
+		width: 220px;
+		height: 40px;
+		background-color: #e76508;
+		margin:20px auto;
+		border: none;
+	  border-radius: 5px;
+	}
+	#error a, #return {
+		text-decoration: none;
+		color:#fff;
+		text-align: center;
+		font-size:24px;
+		font-weight: bold;
+	}
+/*Arcana Pages*/
+	#arcana {
+		width:100%;
+		margin:0 auto;
+		padding-bottom:10px;
+		min-height: 100%;
+	}
+	#arcana .arcana-header {
+		height:120px;
+		background:rgba(19, 19, 88,1);
+		color:#000;
+		text-shadow:
+  		-2px -2px 1px #fff,
+  		2px -2px 1px #fff,
+  		-2px 2px 1px #fff,
+  		2px 2px 1px #fff; 
+	}
+	#arcana .arcana-header h1 {
+		margin:20px 20px 0;
+	}
+	#arcana .arcana-header h2 {
+		margin:0 20px;
+	}
+	#arcana img.portrait {
+		height:120px;
+		width:120px;
+		float:left;
+	}
+	#arcana .title{
+		display:inline-block;
+		height:120px;
+	}
+	#arcana .dates-title, #arcana ul.dates, #arcana .rank-title, #arcana div.dialog, #arcana div.notes {
+		width:90%;
+		padding:10px;
+	}
+
+	#arcana .dates-title, #arcana .rank-title {
+		background:rgba(19, 19, 58,0.8);
+		margin:20px auto 0;
+		color:black;
+		text-shadow:
+  		-1px -1px 1px #fff,
+  		1px -1px 1px #fff,
+  		-1px 1px 1px #fff,
+  		1px 1px 1px #fff;  
+  	cursor:pointer;
+  	border-bottom: 1px solid rgba(19, 19, 38,1);
+	}
+	#arcana ul.dates, #arcana div.dialog {
+		background:rgba(19, 19, 40,.5);
+		margin:0 auto 20px;
+	}
+	#arcana .rank-title, #arcana div.dialog {
+		margin:0 auto;
+	}
+	#arcana div.notes {
+		margin:20px auto;
+		background:rgba(19, 19, 58,0.8);
+		min-height:100px;
+		border-radius: 10px;
+	}
+	.with, .without {
+		float:right;
+		display:inline-block;
+		width:70px;
+		text-align: center;
+		margin:0px 5px;
+		border-radius:2px;
+	}
+	.with {
+		background-color: rgba(19, 108, 19,1);
+	}
+	ul.answers li {
+		margin:4px 0;
+	}
+/*Trivia Page*/
+	#quiz button.btn--default {
+		height:inherit;
+		width:inherit;
+	  padding: 10px 20px;
+	  margin:20px;
+	}
+	#quiz {
+
+	}
+/*Footer*/ 
+	footer {
+		background:#101010;
+		padding:0;
+		margin:0;
+		height:30px;
+		clear:both;
+	}
+	footer p {
+	color:#f88330;
+		margin:4px auto;
+		text-align: center;
+		text-shadow:0 1px 1px #FFB663;
+	}
+/*Media Queries*/
+	@media screen and (min-width: 1400px) {
+		.jumbotron {
+			height: 600px;
+			background-position: center -100px;
+		}
+		.jumbotron h1 {
+			font-size:60px;
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		.date h1, h1.title {
+			font-size: 34px; 
+		}
+		.jumbotron {
+			height: 400px;
+			background-position: center 0;
+		}
+	}
+	@media screen and (max-width: 700px) {
+		nav li {
+			padding-top:4px;
+			font-size:20px;
+		}
+		nav li+li {
+			margin-left:20px;
+		}
+		.date h1, h1.title {
+			font-size: 30px;
+		}
+		.date h1 span {
+			display:block;
+		}
+		.jumbotron h1 {
+			text-align:center;
+		}
+		.cal {
+			width:45%;
+			min-width: 200px;
+			margin:20px 1.66%;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		.daycard, .nightcard {
+			min-height: 200px;
+		}
+		.right, .left {
+			float:none;
+			padding-right:inherit;
+		}
+		nav {
+			height:inherit;
+		}
+		nav>ul>li>a {
+			display:block;
+			height:100%;
+			width:100%;
+		}
+		nav ul {
+			padding:0;
+		}
+		nav li {
+			font-size:24px;
+			width:90%;
+			margin:0 auto;
+			padding:10px;
+			text-align: center;
+		}
+		nav li+li {
+			padding:10px;
+			margin:0 auto;
+			border-top:2px solid #303030;
+		}
+		.cal {
+			width:90%;
+			margin:20px 5%;
+		}
+		.date h1, h1.title {
+			font-size: 26px;
+		}
+		h1.title {
+			padding:12px 40px;
+		}
+		ul.slinks {
+			margin: 10px 0;
+			width:100%;
+		}
+		p.spoiler {
+			width:300px;
+			height:inherit;
+		}
+		button {
+			height:inherit;
+			width:340px;
+			margin:-20px -20px;
+		}
+		p.spoiler span {
+			margin:20px;
+		}
+		#arcana .dates-title, #arcana ul.dates, #arcana .rank-title, #arcana div.dialog, #arcana div.notes {
+			width:100%;
+			overflow: auto;
+		}
+		ul.answers {
+			padding-left:0;
+		}
+		.with, .without {
+			width:45%;
+		}
+		.response, div.dialog h4 {
+			float:left;
+			width:100%;
+		}
+	}
+	@media screen and (max-width: 350px) {
+		.date h1, h1.title {
+			font-size: 22px;
+		}
+	}

@@ -1,46 +1,20 @@
 
-{% extends 'layout.html' %}
-
-{% block head %}{% endblock %}
-
-{% block nav %}
-		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../">Home</a></li>
-		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../calendar">Calendar</a></li>
-		<li class="left"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="/slinks">Social Links</a></li>
-		<li class="right"><a class="animsition-link" data-animsition-out="fade-out-up" data-animsition-out-duration="300" href="../trivia">Trivia</a></li>
-{% endblock %}
-
-{% block title %}Social Links{% endblock %}
-
-{% block content %}
 	<div id='arcana'>
-	{% for slink in slinks %}
-		{% if slink.name !== undefined %}
-			<div class="arcana-header tile" >
-				<img src="http://lawlietblack.com/img/{{slink.img}}.png" class="portrait" alt="">
+			<div class="arcana-header tile" ng-repeat="slink in slinks" ng-click="console.log('test')">
+				<img src="#" ng-src="http://lawlietblack.com/img/{{slink.img}}.png" class="portrait" alt="">
 				<div class="title">
 					<h1>{{slink.arcana}} Arcana</h1>
 					<h2>{{slink.name}}</h2>
 				</div>
-				<img class="card" alt="{{slink.img}}" src="http://lawlietblack.com/img/cards/{{slink.img}}-card.png">
+				<img class="card" alt="{{slink.img}}" src="#" ng-src="http://lawlietblack.com/img/cards/{{slink.img}}-card.png">
 			</div>
-		{% endif %}
-	{% endfor %}
 	</div>	
-{% endblock %}
 
-{% block script %}
 	<script>
-		$('#arcana div.tile').click(function(){
+		$('#arcana').on('click', 'div.tile', function(){
 			var arcana = $(this).children('.card').prop('alt')
-			location.href = "/arcana/"+ arcana;
+			location.href = "#/arcana/"+ arcana;
 			console.log(arcana);
 		});
-		$('.animsition').animsition({
-			inClass: 'fade-in-up', 
-			inDuration: 500,
-			outClass: 'fade-out-left',
-			outDuration: 400
-		});
+
 	</script>
-{% endblock %}
