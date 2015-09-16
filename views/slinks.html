@@ -1,20 +1,10 @@
-
-	<div id='arcana'>
-			<div class="arcana-header tile" ng-repeat="slink in slinks" ng-click="console.log('test')">
-				<img src="#" ng-src="http://lawlietblack.com/img/{{slink.img}}.png" class="portrait" alt="">
-				<div class="title">
-					<h1>{{slink.arcana}} Arcana</h1>
-					<h2>{{slink.name}}</h2>
-				</div>
-				<img class="card" alt="{{slink.img}}" src="#" ng-src="http://lawlietblack.com/img/cards/{{slink.img}}-card.png">
-			</div>
-	</div>	
-
-	<script>
-		$('#arcana').on('click', 'div.tile', function(){
-			var arcana = $(this).children('.card').prop('alt')
-			location.href = "#/arcana/"+ arcana;
-			console.log(arcana);
-		});
-
-	</script>
+<style>
+	main {
+		color:#fff;
+		background: linear-gradient(90deg, black, rgba(0,0,0,0.5), black), linear-gradient(rgba(19, 19, 128,0.5),  rgba(19, 19, 128,0.5)), #222 url('http://lawlietblack.com/img/cards/fool-card.png') no-repeat fixed center;
+		background-size: cover;
+	}
+</style>
+<div id='arcana'>
+	<arcana-tile ng-repeat="slink in slinks" slink="slink" class="arcana-tile"></arcana-tile>
+</div>	

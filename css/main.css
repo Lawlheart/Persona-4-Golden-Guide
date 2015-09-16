@@ -1,54 +1,50 @@
 /*General*/
-	body {
-		background-color: #101010;
-		font-family: 'Open Sans', sans-serif;
+  html, body {
+  	height:100%;
+  	background-color: #CB0;
+  }
+  main {
+  	min-height: calc(100% - 80px);
+  }
+  main:after{
+    clear: both;
+    content: "";
+    display: block;
 	}
+  ng-view {
+  	height:100%;
+  }
 	* ul {
 		list-style: none;
 	}
-	.glow {
-		text-shadow:
-  		-2px -2px 2px #fff,
-  		2px -2px 2px #fff,
-  		-2px 2px 2px #fff,
-  		2px 2px 2px #fff; 
-	}
-	.left {
-		float:left;
-	}
-	.right {
-		float:right;
-		padding-right:40px;
+	h1, h2, h3, h4, h5, h6 {
+		color:#eee;
 	}
 /*Navigation Bar*/
-	nav { 
-		background:#101010;
+	.navbar {
+    background: linear-gradient(#e76508, #dd4814);
+    border: 0;
+    border-radius: 0px;
+    font-size:20px;
+    font-weight: bold;
 		padding:0;
 		margin:0;
-		height:40px;
 	}
-	nav ul {
-		margin:0;
+	.navbar-brand {
+    font-size:20px;
 	}
-	nav li {
-		font-size:24px;
-		float:left;
-		font-weight:bold;
+	.navbar-brand:hover {
+		background-color: transparent;
+		color:#fff;
 	}
 	nav a {
-		color:#f88330;
+		color:#fff;
 		text-decoration: none;
 	}
-	nav a:hover {
-		color:#C55000;
-		text-shadow:
-  		-2px -2px 8px #ee0,
-  		2px -2px 8px #ee0,
-  		-2px 2px 8px #ee0,
-  		2px 2px 8px #ee0; 
-	}
-	nav li+li {
-		margin-left:30px;
+	nav a.active, nav a:hover{
+		color: #dd4814;
+		background-color: #fff;
+		border-radius: 5px;
 	}
 /*Home Page*/
 	.jumbotron {
@@ -59,30 +55,10 @@
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	}
-	.jumbotron h1 {
-		color: #fff;
-		font-size:46px;
-		padding:10px 20px;
-  	margin-top:0px;
-  	text-shadow: 
-  		0 1px 1px #444,
-			0 2px 1px #333,
-			0 3px 1px #222,
-			0 4px 1px #111,
-			0 5px 1px #000,
-			10px 10px 20px rgba(231,171,8,0.9),
-			-10px 10px 20px rgba(231,171,8,0.9),
-			-10px -10px 20px rgba(231,171,8,0.9),
-			10px -10px 20px rgba(231,171,8,0.9),
-			10px 10px 20px rgba(231,171,8,0.9),
-			-10px 10px 20px rgba(231,171,8,0.9),
-			10px -10px 20px rgba(231,171,8,0.9),
-			10px 10px 20px rgba(231,171,8,0.9);
-  }
   #home, #updates {
   	width:100%;
 		margin:0 auto;
-		background-color: #FFBF00;
+		background-color: #CB0;
 		min-height: 200px;
 		padding-bottom:40px;
   }
@@ -97,7 +73,7 @@
   }
 /*Social Links Page*/
 	#arcana div.tile {
-		width:500px;
+		width:400px;
 		float:left;
 		display:block;
 		margin:20px;
@@ -105,12 +81,12 @@
 	}
 	#arcana div.tile div.title { 
 		/*85+120 = 205*/
-		width:300px;
+		width:200px;
 		font-size: .85rem;
 		margin-left:-10px;
 		margin-right:-10px;
 	}
-	#arcana div.tile img.card {
+	#arcana img.card {
 		height:120px;
 		float:right;
 	}
@@ -119,7 +95,7 @@
 		overflow: auto;
 		margin:auto;
 	}
-	#calendar h1, #quiz h1, #home h1, #updates h1 {
+	#quiz h1, #home h1, #updates h1 {
 		margin:0;
 		padding:10px 30px;
 		background-color: #e76508;
@@ -154,8 +130,9 @@
 	#calendar thead {
 		color:#fff;
 	}
-	#calendar thead, #calendar caption {
+	#calendar thead, #calendar caption, #calendar th {
 		background-color:#e76508;
+		text-align: center;
 	}
 /*Dates Pages*/	
 	.arrow {
@@ -180,7 +157,7 @@
 		margin:0 auto;
 	}
 	.daycard, #calendar, #error, #quiz {
-		background-color: #FFBF00;
+		background-color: #CB0;
 		min-height: 400px;
 	}
 	.nightcard {
@@ -206,10 +183,19 @@
 		background-position:0 0, 40px 40px;
 	}
 	.date img {
-		display:inline;
+		float:left;
 		height:100px;
 		width:100px;
 		margin:0;
+	}
+	.date-title {
+		display:inline-block;
+		color:#000;
+		font-weight: bold;
+		height:100%;
+		width:calc(100%-120px);
+		margin:0;
+		padding:20px;
 	}
 	.date h1, .home h1 {
 		display:inline-block;
@@ -218,6 +204,8 @@
 		font-size:46px;
 	}
 	h1.title {
+		color:#000;
+		font-weight: bold;
 		text-align: center;
 		margin:0;
 		padding:10px 40px;
@@ -230,7 +218,7 @@
 	p.notes, #progress, #home p {
 		font-size:20px;
 	}
-	h2.slinks, p.notes, #progress, #question, #home p, #home h2, #updates h2 {
+	h2.slinks, p.notes, #progress, #question, #home p, #home h2, #updates h4 {
 		font-weight:bold;
 		color:#101010;
 		padding:0;
@@ -285,7 +273,7 @@
 	.spoiler {
 		background-color: #1d3c6a;
 	  width: 440px;
-	  height:60px;
+	  height:100px;
 	  margin: 20px auto 0;
 	  border-radius: 5px;
 	  padding:20px;
@@ -322,19 +310,12 @@
 	#arcana .arcana-header {
 		height:120px;
 		background:rgba(19, 19, 88,1);
-		color:#000;
-		text-shadow:
-  		-2px -2px 1px #fff,
-  		2px -2px 1px #fff,
-  		-2px 2px 1px #fff,
-  		2px 2px 1px #fff; 
+		text-shadow:0 1px 0 #000;
 	}
-	#arcana .arcana-header h1 {
-		margin:20px 20px 0;
+	#arcana h3, #arcana h4 {
+		margin:10px 0;
 	}
-	#arcana .arcana-header h2 {
-		margin:0 20px;
-	}
+
 	#arcana img.portrait {
 		height:120px;
 		width:120px;
@@ -343,6 +324,7 @@
 	#arcana .title{
 		display:inline-block;
 		height:120px;
+		padding:20px;
 	}
 	#arcana .dates-title, #arcana ul.dates, #arcana .rank-title, #arcana div.dialog, #arcana div.notes {
 		width:90%;
@@ -389,26 +371,29 @@
 		margin:4px 0;
 	}
 /*Trivia Page*/
-	#quiz button.btn--default {
-		height:inherit;
-		width:inherit;
+	#quiz button.btn {
 	  padding: 10px 20px;
 	  margin:20px;
 	}
-	#quiz {
-
+	.quiz-container, #quiz {
+		min-height:100%;
+	}
+	#score {
+		color:#000;
 	}
 /*Footer*/ 
 	footer {
-		background:#101010;
-		padding:0;
+    background: #e76508;
+    border-color: #dd4814;
+    height:30px;
+		padding:4px;
 		margin:0;
 		height:30px;
 		clear:both;
 	}
 	footer p {
-	color:#f88330;
-		margin:4px auto;
+		color:#fff;
+		margin:0 auto;
 		text-align: center;
 		text-shadow:0 1px 1px #FFB663;
 	}
@@ -431,14 +416,23 @@
 			background-position: center 0;
 		}
 	}
+	@media screen and (min-width: 440px) and (max-width: 900px) {
+		#arcana div.tile {
+			margin-left: calc((100% - 400px)/2);
+		}
+	}
+	@media screen and (min-width: 901px) and (max-width: 1340px) {
+		#arcana arcana-tile:nth-child(2n+1) div.tile {
+			margin-left: calc((100% - 840px)/2);
+		}
+	} 	
+	@media screen and (min-width: 1341px) {
+		#arcana arcana-tile:nth-child(3n+1) div.tile{
+			margin-left: calc((100% - 1280px)/2);
+		}
+	} 
+
 	@media screen and (max-width: 700px) {
-		nav li {
-			padding-top:4px;
-			font-size:20px;
-		}
-		nav li+li {
-			margin-left:20px;
-		}
 		.date h1, h1.title {
 			font-size: 30px;
 		}
@@ -461,29 +455,6 @@
 		.right, .left {
 			float:none;
 			padding-right:inherit;
-		}
-		nav {
-			height:inherit;
-		}
-		nav>ul>li>a {
-			display:block;
-			height:100%;
-			width:100%;
-		}
-		nav ul {
-			padding:0;
-		}
-		nav li {
-			font-size:24px;
-			width:90%;
-			margin:0 auto;
-			padding:10px;
-			text-align: center;
-		}
-		nav li+li {
-			padding:10px;
-			margin:0 auto;
-			border-top:2px solid #303030;
 		}
 		.cal {
 			width:90%;

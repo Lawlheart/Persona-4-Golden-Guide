@@ -30,8 +30,8 @@ Quiz.prototype.renderInElement = function() {
 	this.populateIdWithHTML("quiz", HTML)
 };
 Quiz.prototype.renderScorePage = function() {
-	var HTML ='<h1>Persona Quiz</h1>';
-	HTML += '<h2 id="score" class="headline-secondary--grouped">Score: ' + this.score + ' out of ' + this.questions.length + '</h2>';
+	var HTML ='<div class="text-center"><h1>Persona Quiz</h1>';
+	HTML += '<h2 id="score" class="headline-secondary--grouped">Score: ' + this.score + ' out of ' + this.questions.length + '</h2></div>';
 	this.populateIdWithHTML("quiz", HTML);
 }
 Quiz.prototype.populateIdWithHTML = function(id, text) {
@@ -52,7 +52,7 @@ Question.prototype.toHTML = function() {
 	for(var i=0;i<this.choices.length;i++) {
 		var choice = this.choices[i]
 		HTML += '<button id="guess'+ i +'" '
-		HTML += 'class="btn--default"' 
+		HTML += 'class="btn-warning btn"' 
 		HTML += 'onclick="quiz.guess(\'' + choice + '\')">'
 		HTML += choice;
 		HTML += '</button>'

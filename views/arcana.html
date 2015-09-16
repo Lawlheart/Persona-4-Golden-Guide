@@ -1,22 +1,13 @@
 
-	<style>
-		#arcana.loaded {
-			color:#fff;
-			background: linear-gradient(90deg, black, rgba(0,0,0,0.5), black) center center fixed, linear-gradient(rgba(19, 19, 128,0.5), rgba(19, 19, 128,0.5)), url('http://lawlietblack.com/img/cards/{{arcana.img}}-card.png') no-repeat center center fixed;
-			background-size: cover;
-		}
-		.btn {
-			background-color: rgba(19, 19, 88,1);
-		}
-	</style>
 
 <div id="arcana">
 	<div class="arcana-header">
-		<img src="http://lawlietblack.com/img/{{arcana.img}}.png" class="portrait" alt="">
+		<img src="#" ng-src="http://lawlietblack.com/img/{{arcana.img}}.png" class="portrait" alt="">
 		<div class="title">
-			<h1>{{arcana.arcana}} Arcana</h1>
-			<h2>{{arcana.name}}</h2>
+			<h3>{{arcana.arcana}} Arcana</h3>
+			<h4>{{arcana.name}}</h4>
 		</div>
+		<img class="card" alt="{{slink.img}}" src="#" ng-src="http://lawlietblack.com/img/cards/{{arcana.img}}-card.png">
 	</div>
 
 	<div class="notes">{{arcana.notes}}</div>

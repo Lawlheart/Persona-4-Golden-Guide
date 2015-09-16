@@ -51,7 +51,7 @@ app.controller('DateController', ['$scope', '$routeParams', 'persona', function(
 app.controller('SlinksController', ['$scope', '$routeParams', 'persona', function($scope, $routeParams, persona) {
 	persona.success(function(data) {
 		$scope.slinks = data.slinks
-		console.log($scope.slinks)
+		console.log($scope.slinks);
 	})
 }]);
 
@@ -105,5 +105,44 @@ app.controller('ArcanaController', ['$scope', '$routeParams', 'persona', functio
 		$scope.showTripDays = function() {
 			$('.trip-days').toggle();
 		}
+		$('main').css('background', "linear-gradient(90deg, black, rgba(0,0,0,0.5), black), linear-gradient(rgba(19, 19, 128,0.5),  rgba(19, 19, 128,0.5)), #222 url('http://lawlietblack.com/img/cards/" + $scope.arcana.img + "-card.png') no-repeat fixed center").css('background-size', 'cover');
 	});
 }]);
+
+app.directive('personaNav', function() {
+	return {
+		restrict: 'E',
+		scope: {},
+		templateUrl: 'views/persona-nav.html',
+		controller: ['$scope', '$location', function($scope, $location) {
+			$scope.isActive = function(viewLocation) {
+				return viewLocation === $location.path();
+			} 
+		}],
+		link: function($scope, $element, $attrs) {
+			console.log(location.hash)
+		}
+	}
+})
+app.directive('arcanaTile', function() {
+	return {
+		restrict: 'E',
+		templateUrl:'views/arcana-tile.html' ,
+		scope: {
+			slink: '='
+		}, 
+		link: function($scope, $element, $attrs) {
+			var $card = $element.children().eq(0);
+      $element.hover(function() {
+        $card.addClass('animated pulse');
+      }, function() {
+        window.setTimeout( function(){
+          $card.removeClass('animated pulse');
+          }, 1000); 
+      });
+      $scope.redirect = function(arcana) {
+				location.href = "#/arcana/"+ arcana;
+			}
+		}
+	}
+})
