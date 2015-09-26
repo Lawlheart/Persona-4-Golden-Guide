@@ -1,13 +1,15 @@
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+**/node_modules
 
 #Archive files
 node
 
 # notes
 notes
+notes.md
 
 # windows thumbnails
-public/img/Thumbs.db
-public/img/cards/Thumbs.db
+Thumbs.db
+**/Thumbs.db
