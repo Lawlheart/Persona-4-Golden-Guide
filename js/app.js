@@ -105,7 +105,7 @@ app.controller('ArcanaController', ['$scope', '$routeParams', 'persona', functio
 		$scope.showTripDays = function() {
 			$('.trip-days').toggle();
 		}
-		$('main').css('background', "linear-gradient(90deg, black, rgba(0,0,0,0.5), black), linear-gradient(rgba(19, 19, 128,0.5),  rgba(19, 19, 128,0.5)), #222 url('http://lawlietblack.com/img/cards/" + $scope.arcana.img + "-card.png') no-repeat fixed center").css('background-size', 'cover');
+		$('main').css('background', "linear-gradient(90deg, black, rgba(0,0,0,0.5), black), linear-gradient(rgba(19, 19, 128,0.5),  rgba(19, 19, 128,0.5)), #222 url('http://persona.lawlietblack.com/img/cards/" + $scope.arcana.img + "-card.png') no-repeat fixed center").css('background-size', 'cover');
 	});
 }]);
 
