@@ -48,7 +48,7 @@
 	}
 /*Home Page*/
 	.jumbotron {
-	  background:url('http://lawlietblack.com/img/p4banner.jpg');
+	  background:url('http://persona.lawlietblack.com/img/p4banner.jpg');
 	  width:100%;
 	  margin:0;
 	  height: 500px;
@@ -165,7 +165,7 @@
 		min-height: 400px;
 	}
 	.date{
-		background-image: url('http://lawlietblack.com/img/personabg.png');
+		background-image: url('http://persona.lawlietblack.com/img/personabg.png');
 		background-size: cover;
 		background-repeat:no-repeat;
 		margin:0;
