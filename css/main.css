@@ -329,6 +329,7 @@
 	#arcana .dates-title, #arcana ul.dates, #arcana .rank-title, #arcana div.dialog, #arcana div.notes {
 		width:90%;
 		padding:10px;
+    color: #ccc;
 	}
 
 	#arcana .dates-title, #arcana .rank-title {
